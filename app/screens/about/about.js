@@ -78,19 +78,10 @@ export default class About extends PureComponent {
     }
 
     render() {
-        const {theme, config, license} = this.props;
+        const {theme, config} = this.props;
         const style = getStyleSheet(theme);
 
-        let title = (
-            <FormattedText
-                id='about.teamEditiont0'
-                defaultMessage='Team Edition'
-                style={style.title}
-                testID='about.title'
-            />
-        );
-
-        let subTitle = (
+        const subTitle = (
             <FormattedText
                 id='about.teamEditionSt'
                 defaultMessage='All your team communication in one place, instantly searchable and accessible anywhere.'
@@ -99,11 +90,11 @@ export default class About extends PureComponent {
             />
         );
 
-        let learnMore = (
+        const learnMore = (
             <View style={style.learnContainer}>
                 <FormattedText
                     id='about.teamEditionLearn'
-                    defaultMessage='Join the Mattermost community at '
+                    defaultMessage='Join the grammm community at '
                     style={style.learn}
                     testID='about.learn_more'
                 />
@@ -119,73 +110,6 @@ export default class About extends PureComponent {
                 </TouchableOpacity>
             </View>
         );
-
-        let licensee;
-        if (config.BuildEnterpriseReady === 'true') {
-            title = (
-                <FormattedText
-                    id='about.teamEditiont1'
-                    defaultMessage='Enterprise Edition'
-                    style={style.title}
-                    testID='about.title'
-                />
-            );
-
-            subTitle = (
-                <FormattedText
-                    id='about.enterpriseEditionSt'
-                    defaultMessage='Modern communication from behind your firewall.'
-                    style={style.subtitle}
-                    testID='about.subtitle'
-                />
-            );
-
-            learnMore = (
-                <View style={style.learnContainer}>
-                    <FormattedText
-                        id='about.enterpriseEditionLearn'
-                        defaultMessage='Learn more about Enterprise Edition at '
-                        style={style.learn}
-                        testID='about.learn_more'
-                    />
-                    <TouchableOpacity
-                        onPress={this.handleAboutEnterprise}
-                    >
-                        <Text
-                            style={style.learnLink}
-                            testID='about.learn_more.url'
-                        >
-                            {Config.EELearnURL}
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-            );
-
-            if (license.IsLicensed === 'true') {
-                title = (
-                    <FormattedText
-                        id='about.enterpriseEditione1'
-                        defaultMessage='Enterprise Edition'
-                        style={style.title}
-                        testID='about.title'
-                    />
-                );
-
-                licensee = (
-                    <View style={style.licenseContainer}>
-                        <FormattedText
-                            id='mobile.about.licensed'
-                            defaultMessage='Licensed to: {company}'
-                            style={style.info}
-                            values={{
-                                company: license.Company,
-                            }}
-                            testID='about.licensee'
-                        />
-                    </View>
-                );
-            }
-        }
 
         let serverVersion;
         if (config.BuildNumber === config.Version) {
@@ -278,7 +202,6 @@ export default class About extends PureComponent {
                             >
                                 {`${config.SiteName} `}
                             </Text>
-                            {title}
                         </View>
                         {subTitle}
                         <FormattedText
@@ -301,12 +224,11 @@ export default class About extends PureComponent {
                             }}
                             testID='about.database'
                         />
-                        {licensee}
                         {learnMore}
                         {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
                             <FormattedText
                                 id='mobile.about.powered_by'
-                                defaultMessage='{site} is powered by Mattermost'
+                                defaultMessage='{site} is powered by grammm'
                                 style={style.footerText}
                                 values={{
                                     site: this.props.config.SiteName,

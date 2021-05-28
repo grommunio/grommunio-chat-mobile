@@ -1691,7 +1691,7 @@ index 0000000..ceb52a8
 +        [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnRef];
 +        [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
 +        [query setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnAttributes];
-+//        [query setObject:@"com.mattermost.rnbeta" forKey:(id)kSecAttrAccessGroup];
++//        [query setObject:@"com.grommunio.chat" forKey:(id)kSecAttrAccessGroup];
 +        
 +        //Set up the mode-specific pieces of the query
 +        switch(mode)

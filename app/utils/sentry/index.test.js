@@ -8,7 +8,7 @@ import {cleanUrlForLogging} from '@utils/sentry';
 
 describe('utils/sentry', () => {
     describe('cleanUrlForLogging', () => {
-        Client4.setUrl('https://mattermost.example.com/subpath');
+        Client4.setUrl('https://example.com/chat');
 
         const tests = [{
             name: 'should remove server URL',

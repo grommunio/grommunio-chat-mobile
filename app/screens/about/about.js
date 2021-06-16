@@ -188,7 +188,7 @@ export default class About extends PureComponent {
                 >
                     <View style={style.logoContainer}>
                         <CompassIcon
-                            name='mattermost'
+                            name='grammm'
                             color={theme.centerChannelColor}
                             size={120}
                             testID='about.logo'

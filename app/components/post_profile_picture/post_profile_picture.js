@@ -48,7 +48,7 @@ export default class PostProfilePicture extends PureComponent {
             return (
                 <View style={style.buffer}>
                     <CompassIcon
-                        name='mattermost'
+                        name='grammm'
                         color={theme.centerChannelColor}
                         size={ViewTypes.PROFILE_PICTURE_SIZE}
                     />

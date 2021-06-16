@@ -685,7 +685,7 @@ SPEC CHECKSUMS:
   BVLinearGradient: e3aad03778a456d77928f594a649e96995f1c872
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: 7b423f9e248eae65987838148c36eec1dbfe0b53
-  FBReactNativeSpec: 5f648f4f07de2b0b37afa48029ed2b894d9ebfd0
+  FBReactNativeSpec: b2fed3c2e3cc75c7795850fd7e461036809dc535
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   jail-monkey: 0b62fb896246639f4203ea90358e08db91b7f5ea
   libwebp: e90b9c01d99205d03b6bb8f2c8c415e5a4ef66f0
@@ -723,7 +723,7 @@ SPEC CHECKSUMS:
   react-native-safe-area-context: e471852c5ed67eea4b10c5d9d43c1cebae3b231d
   react-native-startup-time: c4c433fcf7ccac3c622f5d522e4ef18fb3bb0c9c
   react-native-video: 1574074179ecaf6a9dd067116c8f31bf9fec15c8
-  react-native-webview: 0d1c2b4e7ffb0543a74fa0512f2f8dc5fb0e49e2
+  react-native-webview: 01d415811b3b18c925399b22cc3a6355afc7d7a4
   React-perflogger: aad6d4b4a267936b3667260d1f649b6f6069a675
   React-RCTActionSheet: fc376be462c9c8d6ad82c0905442fd77f82a9d2a
   React-RCTAnimation: ba0a1c3a2738be224a08092fa7f1b444ab77d309

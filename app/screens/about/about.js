@@ -27,7 +27,6 @@ const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
 export default class About extends PureComponent {
     static propTypes = {
         config: PropTypes.object.isRequired,
-        license: PropTypes.object.isRequired,
         theme: PropTypes.object.isRequired,
     };
 
@@ -187,7 +186,7 @@ export default class About extends PureComponent {
                     testID='about.scroll_view'
                 >
                     <View style={style.logoContainer}>
-                        <GrammmIcon/>
+                        <GrammmIcon style={style.logo}/>
                     </View>
                     <View style={style.infoContainer}>
                         <View style={style.titleContainer}>
@@ -402,6 +401,10 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
             flex: 1,
             flexDirection: 'row',
             marginBottom: 10,
+        },
+        logo: {
+            width: 200,
+            height: 200,
         },
     };
 });

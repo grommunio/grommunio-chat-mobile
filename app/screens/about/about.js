@@ -15,12 +15,12 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {intlShape} from 'react-intl';
 
 import Config from '@assets/config';
-import CompassIcon from '@components/compass_icon';
 import FormattedText from '@components/formatted_text';
 import StatusBar from '@components/status_bar';
 import AboutLinks from '@constants/about_links';
 import {changeOpacity, makeStyleSheetFromTheme} from '@utils/theme';
 import {tryOpenURL} from '@utils/url';
+import GrammmIcon from '@components/grammm_icon';
 
 const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
 
@@ -187,12 +187,7 @@ export default class About extends PureComponent {
                     testID='about.scroll_view'
                 >
                     <View style={style.logoContainer}>
-                        <CompassIcon
-                            name='grammm'
-                            color={theme.centerChannelColor}
-                            size={120}
-                            testID='about.logo'
-                        />
+                        <GrammmIcon/>
                     </View>
                     <View style={style.infoContainer}>
                         <View style={style.titleContainer}>
@@ -237,6 +232,15 @@ export default class About extends PureComponent {
                             />
                         }
                         <FormattedText
+                            id='mobile.about.grammm_copyright'
+                            defaultMessage='Copyright 2021-{currentYear} grammm GmbH. All rights reserved'
+                            style={[style.footerText, style.copyrightText]}
+                            values={{
+                                currentYear: new Date().getFullYear(),
+                            }}
+                            testID='about.copyright'
+                        />
+                        <FormattedText
                             id='mobile.about.copyright'
                             defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved'
                             style={[style.footerText, style.copyrightText]}
@@ -249,34 +253,6 @@ export default class About extends PureComponent {
                             {termsOfService}
                             {tosPrivacyHyphen}
                             {privacyPolicy}
-                        </View>
-                        <View style={style.noticeContainer}>
-                            <View style={style.footerGroup}>
-                                <FormattedText
-                                    id='mobile.notice_text'
-                                    defaultMessage='Mattermost is made possible by the open source software used in our {platform} and {mobile}.'
-                                    style={style.footerText}
-                                    values={{
-                                        platform: (
-                                            <FormattedText
-                                                id='mobile.notice_platform_link'
-                                                defaultMessage='server'
-                                                style={style.noticeLink}
-                                                onPress={this.handlePlatformNotice}
-                                            />
-                                        ),
-                                        mobile: (
-                                            <FormattedText
-                                                id='mobile.notice_mobile_link'
-                                                defaultMessage='mobile apps'
-                                                style={[style.noticeLink, {marginLeft: 5}]}
-                                                onPress={this.handleMobileNotice}
-                                            />
-                                        ),
-                                    }}
-                                    testID='about.notice_text'
-                                />
-                            </View>
                         </View>
                         <View style={style.hashContainer}>
                             <View style={style.footerGroup}>

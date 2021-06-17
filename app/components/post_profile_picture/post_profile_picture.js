@@ -11,6 +11,7 @@ import ProfilePicture from '@components/profile_picture';
 import TouchableWithFeedback from '@components/touchable_with_feedback';
 import {ViewTypes} from '@constants';
 import {emptyFunction} from '@utils/general';
+import GrammmIcon from '@components/grammm_icon';
 
 export default class PostProfilePicture extends PureComponent {
     static propTypes = {
@@ -20,7 +21,6 @@ export default class PostProfilePicture extends PureComponent {
         fromAutoResponder: PropTypes.bool,
         overrideIconUrl: PropTypes.string,
         onViewUserProfile: PropTypes.func,
-        theme: PropTypes.object,
         userId: PropTypes.string,
         isBot: PropTypes.bool,
         isEmoji: PropTypes.bool,
@@ -38,7 +38,6 @@ export default class PostProfilePicture extends PureComponent {
             fromAutoResponder,
             onViewUserProfile,
             overrideIconUrl,
-            theme,
             userId,
             isBot,
             isEmoji,
@@ -47,11 +46,7 @@ export default class PostProfilePicture extends PureComponent {
         if (isSystemMessage && !fromAutoResponder && !isBot) {
             return (
                 <View style={style.buffer}>
-                    <CompassIcon
-                        name='grammm'
-                        color={theme.centerChannelColor}
-                        size={ViewTypes.PROFILE_PICTURE_SIZE}
-                    />
+                    <GrammmIcon style={style.logo}/>
                 </View>
             );
         }
@@ -134,5 +129,9 @@ const style = StyleSheet.create({
                 marginRight: 3,
             },
         }),
+    },
+    logo: {
+        width: ViewTypes.PROFILE_PICTURE_SIZE,
+        height: ViewTypes.PROFILE_PICTURE_SIZE,
     },
 });

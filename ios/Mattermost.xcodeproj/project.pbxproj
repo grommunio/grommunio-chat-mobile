@@ -61,6 +61,7 @@
 		AA9605CFDA8E4E7CB8A041BF /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5BD64DE829E455A997DCAD5 /* Roboto-Regular.ttf */; };
 		ABF5F93B1D0A47BAACEAC376 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34B20A903038487E8D7DEA1E /* Roboto-Light.ttf */; };
 		C99BB3F4E4564F01A531FBEA /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09FA716C56874BDDA30FE8C4 /* Roboto-Medium.ttf */; };
+		D1479CCB26861E48007896DB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1479CCA26861E48007896DB /* CloudKit.framework */; };
 		D719A67137964F08BE47A5FC /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3647DF63D6764CF093375861 /* OpenSans-ExtraBold.ttf */; };
 		DDE492F7425D451884DAA088 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EFF13DD24CE4E26953E598A /* Roboto-Black.ttf */; };
 		DE863F2E1E194A45A5B58FFA /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A734E00E7E184582A877F2B3 /* Roboto-Thin.ttf */; };
@@ -242,6 +243,8 @@
 		C5BD64DE829E455A997DCAD5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C78A387124874496AD2C1466 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Semibold.ttf"; path = "../assets/fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		D08F54E10DF14AE4BBF4E2B4 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D1479CC7267CFDA0007896DB /* MattermostRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MattermostRelease.entitlements; path = Mattermost/MattermostRelease.entitlements; sourceTree = "<group>"; };
+		D1479CCA26861E48007896DB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		D4B1B363C2414DA19C1AC521 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		EB4F0DF36537B0B21BE962FB /* Pods-Mattermost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mattermost.debug.xcconfig"; path = "Target Support Files/Pods-Mattermost/Pods-Mattermost.debug.xcconfig"; sourceTree = "<group>"; };
 		F41672974C2907F74BB59B16 /* libPods-Mattermost-MattermostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mattermost-MattermostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1479CCB26861E48007896DB /* CloudKit.framework in Frameworks */,
 				49B4C050230C981C006E919E /* libUploadAttachments.a in Frameworks */,
 				6C9B1EFD6561083917AF06CF /* libPods-Mattermost.a in Frameworks */,
 			);
@@ -328,6 +332,7 @@
 		13B07FAE1A68108700A75B9A /* Mattermost */ = {
 			isa = PBXGroup;
 			children = (
+				D1479CC7267CFDA0007896DB /* MattermostRelease.entitlements */,
 				536CC6C223E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.h */,
 				536CC6C123E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.m */,
 				499F7A632354F51900E7AF6E /* OnPasteEventManager.h */,
@@ -385,6 +390,7 @@
 		4B992D7BAAEDF8759DB525B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D1479CCA26861E48007896DB /* CloudKit.framework */,
 				495BC96123565ADD00C40C83 /* libYoutubePlayer-in-WKWebView.a */,
 				495BC95F23565ABF00C40C83 /* libXCDYouTubeKit.a */,
 				499F7B412355141200E7AF6E /* libYoutubePlayer-in-WKWebView.a */,
@@ -571,7 +577,7 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = 923H6DK6ZS;
+						DevelopmentTeam = KB6ZAGPNG5;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -594,7 +600,7 @@
 					};
 					7F240A18220D3A2300637665 = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 923H6DK6ZS;
+						DevelopmentTeam = KB6ZAGPNG5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -604,7 +610,7 @@
 					};
 					7F581D31221ED5C60099E66B = {
 						CreatedOnToolsVersion = 10.1;
-						DevelopmentTeam = 923H6DK6ZS;
+						DevelopmentTeam = KB6ZAGPNG5;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -910,7 +916,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 368;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 923H6DK6ZS;
+				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -928,7 +934,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com;
+				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat;
 				PRODUCT_NAME = Mattermost;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -947,12 +953,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Mattermost/Mattermost.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Mattermost/MattermostRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 368;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = 923H6DK6ZS;
+				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -970,7 +976,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com;
+				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat;
 				PRODUCT_NAME = Mattermost;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1003,7 +1009,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 923H6DK6ZS;
+				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UploadAttachments/UploadAttachments";
 				INFOPLIST_FILE = MattermostShare/Info.plist;
@@ -1015,7 +1021,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.Share;
+				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1049,7 +1055,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 923H6DK6ZS;
+				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UploadAttachments/UploadAttachments";
 				INFOPLIST_FILE = MattermostShare/Info.plist;
@@ -1060,7 +1066,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.Share;
+				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MattermostShare/MattermostShare-Bridging-Header.h";
@@ -1092,7 +1098,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 923H6DK6ZS;
+				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1103,7 +1109,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1136,7 +1142,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 923H6DK6ZS;
+				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = NotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -1146,7 +1152,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

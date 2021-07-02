@@ -308,7 +308,7 @@
   "mobile.components.select_server_view.connecting": "正在连接...",
   "mobile.components.select_server_view.enterServerUrl": "输入服务器网址",
   "mobile.components.select_server_view.proceed": "继续",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://mattermost.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
   "mobile.create_channel": "创建",
   "mobile.create_channel.private": "新私有频道",
   "mobile.create_channel.public": "新公共频道",

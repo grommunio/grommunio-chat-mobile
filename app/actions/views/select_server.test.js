@@ -19,7 +19,7 @@ describe('Actions.Views.SelectServer', () => {
     });
 
     test('handleServerUrlChanged', () => {
-        const serverUrl = 'https://mattermost.example.com';
+        const serverUrl = 'https://grommunio-chat.example.com';
         const actions = batchActions([
             {type: GeneralTypes.CLIENT_CONFIG_RESET},
             {type: GeneralTypes.CLIENT_LICENSE_RESET},

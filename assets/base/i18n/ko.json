@@ -211,7 +211,7 @@
   "mobile.components.select_server_view.connecting": "연결 중...",
   "mobile.components.select_server_view.enterServerUrl": "Enter Server URL",
   "mobile.components.select_server_view.proceed": "Proceed",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://mattermost.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
   "mobile.create_channel": "Create",
   "mobile.create_channel.private": "새 비공개 채널",
   "mobile.create_channel.public": "새 공개 채널",

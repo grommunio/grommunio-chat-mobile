@@ -9,7 +9,7 @@ import {cleanUrlForLogging} from '@mm-redux/utils/sentry';
 
 describe('utils/sentry', () => {
     describe('cleanUrlForLogging', () => {
-        const baseUrl = 'https://mattermost.example.com/subpath';
+        const baseUrl = 'https://grommunio-chat.example.com/subpath';
 
         const client = new Client();
         client.setUrl(baseUrl);

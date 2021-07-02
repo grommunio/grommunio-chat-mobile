@@ -246,7 +246,7 @@
   "mobile.components.select_server_view.connecting": "Bezig met verbinden...",
   "mobile.components.select_server_view.enterServerUrl": "Server-URL opgeven",
   "mobile.components.select_server_view.proceed": "Verdergaan",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://mattermost.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
   "mobile.create_channel": "Aanmaken",
   "mobile.create_channel.private": "Nieuw privé-kanaal",
   "mobile.create_channel.public": "Nieuw Publiek kanaal",

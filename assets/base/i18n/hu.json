@@ -246,7 +246,7 @@
   "mobile.components.select_server_view.connecting": "Csatlakozás...",
   "mobile.components.select_server_view.enterServerUrl": "Írja be a kiszolgáló URL-jét",
   "mobile.components.select_server_view.proceed": "Folytassa",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://mattermost.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
   "mobile.create_channel": "Létrehozás",
   "mobile.create_channel.private": "Új privát csatorna létrehozása",
   "mobile.create_channel.public": "Új nyilvános csatorna",

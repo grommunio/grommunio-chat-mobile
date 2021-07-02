@@ -246,7 +246,7 @@
   "mobile.components.select_server_view.connecting": "Ansluter...",
   "mobile.components.select_server_view.enterServerUrl": "Ange serveradress",
   "mobile.components.select_server_view.proceed": "Fortsätt",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://mattermost.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
   "mobile.create_channel": "Skapa",
   "mobile.create_channel.private": "Privat kanal",
   "mobile.create_channel.public": "Publika kanaler",

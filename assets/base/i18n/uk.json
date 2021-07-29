@@ -205,7 +205,7 @@
   "mobile.components.select_server_view.connecting": "Підключення...",
   "mobile.components.select_server_view.enterServerUrl": "Введіть адресу сервера",
   "mobile.components.select_server_view.proceed": "Продовжити",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.com/chat",
   "mobile.create_channel": "Створити",
   "mobile.create_channel.private": "Новий приватний канал",
   "mobile.create_channel.public": "Новий публічний канал",

@@ -21,7 +21,7 @@ describe('Actions.Views.SelectServer', () => {
     });
 
     test('handleServerUrlChanged', () => {
-        const serverUrl = 'https://grommunio-chat.example.com';
+        const serverUrl = 'https://example.com/chat';
         const actions = batchActions([
             {type: GeneralTypes.CLIENT_CONFIG_RESET},
             {type: GeneralTypes.CLIENT_LICENSE_RESET},

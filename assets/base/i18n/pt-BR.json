@@ -246,7 +246,7 @@
   "mobile.components.select_server_view.connecting": "Conectando...",
   "mobile.components.select_server_view.enterServerUrl": "Informe a URL do servidor",
   "mobile.components.select_server_view.proceed": "Prosseguir",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.com/chat",
   "mobile.create_channel": "Criar",
   "mobile.create_channel.private": "Novo Canal Privado",
   "mobile.create_channel.public": "Novo Canal Público",

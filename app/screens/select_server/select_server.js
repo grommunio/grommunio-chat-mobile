@@ -502,7 +502,7 @@ export default class SelectServer extends PureComponent {
                                 keyboardType='url'
                                 placeholder={formatMessage({
                                     id: 'mobile.components.select_server_view.siteUrlPlaceholder',
-                                    defaultMessage: 'https://grommunio-chat.example.com',
+                                    defaultMessage: 'https://example.com/chat',
                                 })}
                                 placeholderTextColor={changeOpacity('#000', 0.5)}
                                 returnKeyType='go'

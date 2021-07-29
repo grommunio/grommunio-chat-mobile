@@ -306,7 +306,7 @@
   "mobile.components.select_server_view.connecting": "Connexion en cours...",
   "mobile.components.select_server_view.enterServerUrl": "Spécifiez l'URL du serveur",
   "mobile.components.select_server_view.proceed": "Continuer",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.com/chat",
   "mobile.create_channel": "Créer",
   "mobile.create_channel.private": "Nouveau canal privé",
   "mobile.create_channel.public": "Nouveau canal public",

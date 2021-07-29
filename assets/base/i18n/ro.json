@@ -245,7 +245,7 @@
   "mobile.components.select_server_view.connecting": "În curs de conectare...",
   "mobile.components.select_server_view.enterServerUrl": "Introduceți URL-ul serverului",
   "mobile.components.select_server_view.proceed": "Continua",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.com/chat",
   "mobile.create_channel": "Creează",
   "mobile.create_channel.private": "Noul canal privat",
   "mobile.create_channel.public": "Noul canal public",

@@ -308,7 +308,7 @@
   "mobile.components.select_server_view.connecting": "接続しています...",
   "mobile.components.select_server_view.enterServerUrl": "サーバーURLを入力してください",
   "mobile.components.select_server_view.proceed": "続行する",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.com/chat",
   "mobile.create_channel": "作成する",
   "mobile.create_channel.private": "新しい非公開チャンネル",
   "mobile.create_channel.public": "新しい公開チャンネル",

@@ -201,7 +201,7 @@
   "mobile.components.select_server_view.connecting": "連線中",
   "mobile.components.select_server_view.enterServerUrl": "輸入伺服器網址",
   "mobile.components.select_server_view.proceed": "繼續",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "\"https://grommunio-chat.example.com\"",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "\"https://example.com/chat\"",
   "mobile.create_channel": "建立",
   "mobile.create_channel.private": "新的私人頻道",
   "mobile.create_channel.public": "新的公開頻道",

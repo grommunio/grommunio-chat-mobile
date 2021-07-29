@@ -308,7 +308,7 @@
   "mobile.components.select_server_view.connecting": "Csatlakozás...",
   "mobile.components.select_server_view.enterServerUrl": "Szerver URL",
   "mobile.components.select_server_view.proceed": "Folytatás",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://grommunio-chat.example.com",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.com/chat",
   "mobile.create_channel": "Létrehozás",
   "mobile.create_channel.private": "Új privát beszélgetés létrehozása",
   "mobile.create_channel.public": "Új nyilvános beszélgetés létrehozása",

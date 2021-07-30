@@ -58,19 +58,19 @@
 		</dict>
 	</dict>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Let grammm chat access your Media files</string>
+	<string>Let grommunio chat access your Media files</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Take a Photo or Video and upload it to your grammm chat instance</string>
+	<string>Take a Photo or Video and upload it to your grommunio chat instance</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>grammm chat uses Face ID to restrict unauthorized users from accessing the app.</string>
+	<string>grommunio chat uses Face ID to restrict unauthorized users from accessing the app.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Capture audio when recording a video to share to your grammm chat instance</string>
+	<string>Capture audio when recording a video to share to your grommunio chat instance</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Save downloaded Photos and Videos from your grammm chat instance to your device</string>
+	<string>Save downloaded Photos and Videos from your grommunio chat instance to your device</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Upload Photos and Videos from your device to your grammm chat instance</string>
+	<string>Upload Photos and Videos from your device to your grommunio chat instance</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Send voice messages to your grammm chat instance</string>
+	<string>Send voice messages to your grommunio chat instance</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Bold.ttf</string>

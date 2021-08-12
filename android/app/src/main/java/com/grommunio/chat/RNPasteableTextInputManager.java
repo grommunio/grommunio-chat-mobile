@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.grommunio.chat;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.inputmethod.EditorInfoCompat;

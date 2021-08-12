@@ -96,7 +96,7 @@
 		<string>Roboto-Thin.ttf</string>
 		<string>Roboto-ThinItalic.ttf</string>
 		<string>compass-icons.ttf</string>
-		<string>Mattermost-Regular.otf</string>
+		<string>grommunio chat-Regular.otf</string>
 	</array>
 	<key>UIBackgroundModes</key>
 	<array>

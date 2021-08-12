@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.grommunio.chat;
 
 import android.os.Bundle;
 

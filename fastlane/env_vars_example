@@ -27,7 +27,7 @@ export FASTLANE_PASSWORD=<itunes connect password>
 export MATCH_PASSWORD=<itunes connect password>
 export MATCH_KEYCHAIN_PASSWORD=<the password of the user running the build in the build machine>
 export MATCH_GIT_URL=<private git repository to allow match sync the provisioning profiles>
-export MATCH_APP_IDENTIFIER=com.mattermost.rnbeta.NotificationService,com.mattermost.rnbeta.MattermostShare,com.mattermost.rnbeta
+export MATCH_APP_IDENTIFIER=com.grommunio.chat.NotificationService,com.grommunio.chat.MattermostShare,com.mattermost.rnbeta
 export MATCH_TYPE=appstore
 export MATCH_SHALLOW_CLONE=true
 export MATCH_SKIP_DOCS=true
@@ -51,8 +51,8 @@ export REPLACE_ASSETS=false
 
 ############ APP IDENTIFIERS ############
 export MAIN_APP_IDENTIFIER=com.mattermost.rnbeta
-export EXTENSION_APP_IDENTIFIER=com.mattermost.rnbeta.MattermostShare
-export NOTIFICATION_SERVICE_IDENTIFIER=com.mattermost.rnbeta.NotificationService
+export EXTENSION_APP_IDENTIFIER=com.grommunio.chat.MattermostShare
+export NOTIFICATION_SERVICE_IDENTIFIER=com.grommunio.chat.NotificationService
 export IOS_APP_GROUP=group.com.mattermost.rnbeta
 export IOS_ICLOUD_CONTAINER=iCloud.com.mattermost.rnbeta
 export IOS_BUILD_EXPORT_METHOD=app-store

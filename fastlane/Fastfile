@@ -388,7 +388,7 @@ platform :ios do
     )
 
     # Set the notification service extension bundle identifier
-    notification_bundle_id = ENV['NOTIFICATION_SERVICE_IDENTIFIER'] || 'com.mattermost.rnbeta.NotificationService'
+    notification_bundle_id = ENV['NOTIFICATION_SERVICE_IDENTIFIER'] || 'com.grommunio.chat.NotificationService'
     update_app_identifier(
         xcodeproj: './ios/Mattermost.xcodeproj',
         plist_path: 'NotificationService/Info.plist',
@@ -397,12 +397,12 @@ platform :ios do
 
     find_replace_string(
         path_to_file: './ios/Mattermost.xcodeproj/project.pbxproj',
-        old_string: 'com.mattermost.rnbeta.NotificationService',
+        old_string: 'com.grommunio.chat.NotificationService',
         new_string: notification_bundle_id
     )
 
     # Set the share extension bundle identifier
-    extension_bundle_id = ENV['EXTENSION_APP_IDENTIFIER'] || 'com.mattermost.rnbeta.MattermostShare'
+    extension_bundle_id = ENV['EXTENSION_APP_IDENTIFIER'] || 'com.grommunio.chat.MattermostShare'
     update_app_identifier(
         xcodeproj: './ios/Mattermost.xcodeproj',
         plist_path: 'MattermostShare/Info.plist',
@@ -411,7 +411,7 @@ platform :ios do
 
     find_replace_string(
         path_to_file: './ios/Mattermost.xcodeproj/project.pbxproj',
-        old_string: 'com.mattermost.rnbeta.MattermostShare',
+        old_string: 'com.grommunio.chat.MattermostShare',
         new_string: extension_bundle_id
     )
 
@@ -683,7 +683,7 @@ platform :android do
       Dir.glob('../android/app/src/main/java/com/mattermost/share/*.java') do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'import com.mattermost.rnbeta.MainApplication;',
+            old_string: 'import com.grommunio.chat.MainApplication;',
             new_string: "import #{package_id}.MainApplication;"
         )
       end

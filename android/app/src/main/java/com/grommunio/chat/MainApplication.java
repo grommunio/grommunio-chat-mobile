@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.grommunio.chat;
 
 import androidx.annotation.Nullable;
 import android.content.Context;
@@ -93,10 +93,10 @@ private final ReactNativeHost mReactNativeHost =
                   @Override
                   public Map<String, ReactModuleInfo> getReactModuleInfos() {
                     Map<String, ReactModuleInfo> map = new HashMap<>();
-                    map.put("MattermostManaged", new ReactModuleInfo("MattermostManaged", "com.mattermost.rnbeta.MattermostManagedModule", false, false, false, false, false));
+                    map.put("MattermostManaged", new ReactModuleInfo("MattermostManaged", "com.grommunio.chat.MattermostManagedModule", false, false, false, false, false));
                     map.put("MattermostShare", new ReactModuleInfo("MattermostShare", "com.mattermost.share.ShareModule", false, false, true, false, false));
-                    map.put("NotificationPreferences", new ReactModuleInfo("NotificationPreferences", "com.mattermost.rnbeta.NotificationPreferencesModule", false, false, false, false, false));
-                    map.put("RNTextInputReset", new ReactModuleInfo("RNTextInputReset", "com.mattermost.rnbeta.RNTextInputResetModule", false, false, false, false, false));
+                    map.put("NotificationPreferences", new ReactModuleInfo("NotificationPreferences", "com.grommunio.chat.NotificationPreferencesModule", false, false, false, false, false));
+                    map.put("RNTextInputReset", new ReactModuleInfo("RNTextInputReset", "com.grommunio.chat.RNTextInputResetModule", false, false, false, false, false));
                     return map;
                   }
                 };

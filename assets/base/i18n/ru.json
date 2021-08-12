@@ -246,7 +246,7 @@
   "mobile.components.select_server_view.connecting": "Подключение...",
   "mobile.components.select_server_view.enterServerUrl": "Введите адрес сервера",
   "mobile.components.select_server_view.proceed": "Продолжить",
-  "mobile.components.select_server_view.siteUrlPlaceholder": "https://mattermost.example.ru",
+  "mobile.components.select_server_view.siteUrlPlaceholder": "https://example.ru",
   "mobile.create_channel": "Создать",
   "mobile.create_channel.private": "Приватный канал",
   "mobile.create_channel.public": "Публичный канал",

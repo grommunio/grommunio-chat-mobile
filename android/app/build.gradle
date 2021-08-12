@@ -128,7 +128,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mattermost.rnbeta"
+        applicationId "com.grommunio.chat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy "RNNotifications.reactNativeVersion", "reactNative60"

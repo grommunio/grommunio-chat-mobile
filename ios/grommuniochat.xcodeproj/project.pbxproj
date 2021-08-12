@@ -28,15 +28,15 @@
 		55C6561DDBBA45929D88B6D1 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32AC3D4EA79E44738A6E9766 /* OpenSans-BoldItalic.ttf */; };
 		62A8448264674B4D95A5A7C2 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C78A387124874496AD2C1466 /* OpenSans-Semibold.ttf */; };
 		69AC753E496743BABB7A7124 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E617BF0F36D4E738F51D169 /* OpenSans-SemiboldItalic.ttf */; };
-		6C9B1EFD6561083917AF06CF /* libPods-Mattermost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEEFB3ED6175724A2653247 /* libPods-Mattermost.a */; };
+		6C9B1EFD6561083917AF06CF /* libPods-grommuniochat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DEEFB3ED6175724A2653247 /* libPods-grommuniochat.a */; };
 		71F30A436B5847DF9D319D15 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F54ABFAE6CE4A6DB11D1ED7 /* Roboto-BlackItalic.ttf */; };
 		7F0F4B0A24BA173900E14C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F4B0924BA173900E14C60 /* LaunchScreen.storyboard */; };
 		7F151D3E221B062700FAD8F3 /* RuntimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F151D3D221B062700FAD8F3 /* RuntimeUtils.swift */; };
 		7F151D41221B069200FAD8F3 /* 0155-keys.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F151D40221B069200FAD8F3 /* 0155-keys.png */; };
 		7F240A1C220D3A2300637665 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F240A1B220D3A2300637665 /* ShareViewController.swift */; };
 		7F240A1F220D3A2300637665 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F240A1D220D3A2300637665 /* MainInterface.storyboard */; };
-		7F240A23220D3A2300637665 /* MattermostShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F240A19220D3A2300637665 /* MattermostShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7F240ACD220D460300637665 /* MattermostBucketModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F240ACC220D460300637665 /* MattermostBucketModule.m */; };
+		7F240A23220D3A2300637665 /* grommuniochatShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F240A19220D3A2300637665 /* grommuniochatShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7F240ACD220D460300637665 /* grommuniochatBucketModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F240ACC220D460300637665 /* grommuniochatBucketModule.m */; };
 		7F240AD0220D4A6100637665 /* KeyChainDataSource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F240ACE220D4A6100637665 /* KeyChainDataSource.mm */; };
 		7F240ADB220E089300637665 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F240ADA220E089300637665 /* Item.swift */; };
 		7F240ADD220E094A00637665 /* TeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F240ADC220E094A00637665 /* TeamsViewController.swift */; };
@@ -45,7 +45,7 @@
 		7F581D35221ED5C60099E66B /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F581D34221ED5C60099E66B /* NotificationService.swift */; };
 		7F581D39221ED5C60099E66B /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7F581D32221ED5C60099E66B /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7F581F78221EEA7C0099E66B /* libUploadAttachments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FABE04522137F2A00D0F595 /* libUploadAttachments.a */; };
-		7F5BA34722B99B7B005B05D3 /* Mattermost+RCTUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA34622B99B7B005B05D3 /* Mattermost+RCTUITextView.m */; };
+		7F5BA34722B99B7B005B05D3 /* grommuniochat+RCTUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BA34622B99B7B005B05D3 /* grommuniochat+RCTUITextView.m */; };
 		7F72F2EE2211220500F98FFF /* GenericPreview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F72F2ED2211220500F98FFF /* GenericPreview.xib */; };
 		7F72F2F0221123E200F98FFF /* GenericPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F72F2EF221123E200F98FFF /* GenericPreview.swift */; };
 		7F72F2F322112EC700F98FFF /* generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F72F2F222112EC700F98FFF /* generic.png */; };
@@ -53,7 +53,7 @@
 		7FABE00A2212650600D0F595 /* ChannelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FABE0092212650600D0F595 /* ChannelsViewController.swift */; };
 		7FABE0562213884700D0F595 /* libUploadAttachments.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FABE04522137F2A00D0F595 /* libUploadAttachments.a */; };
 		7FEB10981F6101710039A015 /* BlurAppScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB10971F6101710039A015 /* BlurAppScreen.m */; };
-		7FEB109D1F61019C0039A015 /* MattermostManaged.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB109A1F61019C0039A015 /* MattermostManaged.m */; };
+		7FEB109D1F61019C0039A015 /* grommuniochatManaged.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB109A1F61019C0039A015 /* grommuniochatManaged.m */; };
 		7FEB109E1F61019C0039A015 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB109C1F61019C0039A015 /* UIImage+ImageEffects.m */; };
 		7FF2AF8B2086483E00FFBDF4 /* KeyShareConsumer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF2AF8A2086483E00FFBDF4 /* KeyShareConsumer.storyboard */; };
 		84E3264B229834C30055068A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E325FF229834C30055068A /* Config.swift */; };
@@ -77,7 +77,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7F240A18220D3A2300637665;
-			remoteInfo = MattermostShare;
+			remoteInfo = grommuniochatShare;
 		};
 		7F581D37221ED5C60099E66B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -133,7 +133,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7F240A23220D3A2300637665 /* MattermostShare.appex in Embed App Extensions */,
+				7F240A23220D3A2300637665 /* grommuniochatShare.appex in Embed App Extensions */,
 				7F581D39221ED5C60099E66B /* NotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -143,85 +143,85 @@
 
 /* Begin PBXFileReference section */
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* MattermostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MattermostTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* grommuniochatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = grommuniochatTests.m; sourceTree = "<group>"; };
 		031EF04FB2D14EEFAACBAA1A /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		09FA716C56874BDDA30FE8C4 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		0E617BF0F36D4E738F51D169 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiboldItalic.ttf"; path = "../assets/fonts/OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
 		12D0B0E475FD46E29907305E /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-ThinItalic.ttf"; path = "../assets/fonts/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Mattermost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mattermost.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Mattermost/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Mattermost/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Mattermost/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Mattermost/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Mattermost/main.m; sourceTree = "<group>"; };
-		182D203F539AF68F1647EFAF /* Pods-Mattermost-MattermostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mattermost-MattermostTests.release.xcconfig"; path = "Target Support Files/Pods-Mattermost-MattermostTests/Pods-Mattermost-MattermostTests.release.xcconfig"; sourceTree = "<group>"; };
-		25BF2BACE89201DE6E585B7E /* Pods-Mattermost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mattermost.release.xcconfig"; path = "Target Support Files/Pods-Mattermost/Pods-Mattermost.release.xcconfig"; sourceTree = "<group>"; };
-		297AAFCCF0BD99FC109DA2BC /* Pods-MattermostTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MattermostTests.release.xcconfig"; path = "Target Support Files/Pods-MattermostTests/Pods-MattermostTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* grommuniochat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grommuniochat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = grommuniochat/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = grommuniochat/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = grommuniochat/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = grommuniochat/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = grommuniochat/main.m; sourceTree = "<group>"; };
+		182D203F539AF68F1647EFAF /* Pods-grommuniochat-grommuniochatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grommuniochat-grommuniochatTests.release.xcconfig"; path = "Target Support Files/Pods-grommuniochat-grommuniochatTests/Pods-grommuniochat-grommuniochatTests.release.xcconfig"; sourceTree = "<group>"; };
+		25BF2BACE89201DE6E585B7E /* Pods-grommuniochat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grommuniochat.release.xcconfig"; path = "Target Support Files/Pods-grommuniochat/Pods-grommuniochat.release.xcconfig"; sourceTree = "<group>"; };
+		297AAFCCF0BD99FC109DA2BC /* Pods-grommuniochatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grommuniochatTests.release.xcconfig"; path = "Target Support Files/Pods-grommuniochatTests/Pods-grommuniochatTests.release.xcconfig"; sourceTree = "<group>"; };
 		32AC3D4EA79E44738A6E9766 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../assets/fonts/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		34B20A903038487E8D7DEA1E /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../assets/fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		3647DF63D6764CF093375861 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../assets/fonts/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		41F3AFE83AAF4B74878AB78A /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../assets/fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		4953BF5F2368AE8600593328 /* SwimeProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwimeProxy.swift; path = Mattermost/SwimeProxy.swift; sourceTree = "<group>"; };
+		4953BF5F2368AE8600593328 /* SwimeProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwimeProxy.swift; path = grommuniochat/SwimeProxy.swift; sourceTree = "<group>"; };
 		495BC95F23565ABF00C40C83 /* libXCDYouTubeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libXCDYouTubeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		495BC96123565ADD00C40C83 /* libYoutubePlayer-in-WKWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libYoutubePlayer-in-WKWebView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		499F7A5D2354F49F00E7AF6E /* UIPasteboard+GetImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+GetImageInfo.h"; path = "Mattermost/UIPasteboard+GetImageInfo.h"; sourceTree = "<group>"; };
-		499F7A5E2354F49F00E7AF6E /* UIPasteboard+GetImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+GetImageInfo.m"; path = "Mattermost/UIPasteboard+GetImageInfo.m"; sourceTree = "<group>"; };
-		499F7A602354F4CC00E7AF6E /* NSData+MimeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MimeType.m"; path = "Mattermost/NSData+MimeType.m"; sourceTree = "<group>"; };
-		499F7A612354F4CC00E7AF6E /* NSData+MimeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MimeType.h"; path = "Mattermost/NSData+MimeType.h"; sourceTree = "<group>"; };
-		499F7A632354F51900E7AF6E /* OnPasteEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnPasteEventManager.h; path = Mattermost/OnPasteEventManager.h; sourceTree = "<group>"; };
-		499F7A642354F51900E7AF6E /* OnPasteEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnPasteEventManager.m; path = Mattermost/OnPasteEventManager.m; sourceTree = "<group>"; };
-		499F7AF0235511FC00E7AF6E /* Mattermost-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mattermost-Regular.otf"; path = "../assets/fonts/Mattermost-Regular.otf"; sourceTree = "<group>"; };
+		499F7A5D2354F49F00E7AF6E /* UIPasteboard+GetImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIPasteboard+GetImageInfo.h"; path = "grommuniochat/UIPasteboard+GetImageInfo.h"; sourceTree = "<group>"; };
+		499F7A5E2354F49F00E7AF6E /* UIPasteboard+GetImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIPasteboard+GetImageInfo.m"; path = "grommuniochat/UIPasteboard+GetImageInfo.m"; sourceTree = "<group>"; };
+		499F7A602354F4CC00E7AF6E /* NSData+MimeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+MimeType.m"; path = "grommuniochat/NSData+MimeType.m"; sourceTree = "<group>"; };
+		499F7A612354F4CC00E7AF6E /* NSData+MimeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+MimeType.h"; path = "grommuniochat/NSData+MimeType.h"; sourceTree = "<group>"; };
+		499F7A632354F51900E7AF6E /* OnPasteEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OnPasteEventManager.h; path = grommuniochat/OnPasteEventManager.h; sourceTree = "<group>"; };
+		499F7A642354F51900E7AF6E /* OnPasteEventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnPasteEventManager.m; path = grommuniochat/OnPasteEventManager.m; sourceTree = "<group>"; };
+		499F7AF0235511FC00E7AF6E /* grommuniochat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "grommuniochat-Regular.otf"; path = "../assets/fonts/grommuniochat-Regular.otf"; sourceTree = "<group>"; };
 		499F7B3F235513F600E7AF6E /* libXCDYouTubeKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libXCDYouTubeKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		499F7B412355141200E7AF6E /* libYoutubePlayer-in-WKWebView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libYoutubePlayer-in-WKWebView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B4BF51230C83D2006E919E /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		531BEBC52513E93C00BC05B1 /* compass-icons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "compass-icons.ttf"; path = "../assets/fonts/compass-icons.ttf"; sourceTree = "<group>"; };
-		536CC6C123E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RNNotificationEventHandler+HandleReplyAction.m"; path = "Mattermost/RNNotificationEventHandler+HandleReplyAction.m"; sourceTree = "<group>"; };
-		536CC6C223E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNNotificationEventHandler+HandleReplyAction.h"; path = "Mattermost/RNNotificationEventHandler+HandleReplyAction.h"; sourceTree = "<group>"; };
-		57CB4735B7E57B50D0B50E16 /* Pods-MattermostTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MattermostTests.debug.xcconfig"; path = "Target Support Files/Pods-MattermostTests/Pods-MattermostTests.debug.xcconfig"; sourceTree = "<group>"; };
+		536CC6C123E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "RNNotificationEventHandler+HandleReplyAction.m"; path = "grommuniochat/RNNotificationEventHandler+HandleReplyAction.m"; sourceTree = "<group>"; };
+		536CC6C223E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "RNNotificationEventHandler+HandleReplyAction.h"; path = "grommuniochat/RNNotificationEventHandler+HandleReplyAction.h"; sourceTree = "<group>"; };
+		57CB4735B7E57B50D0B50E16 /* Pods-grommuniochatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grommuniochatTests.debug.xcconfig"; path = "Target Support Files/Pods-grommuniochatTests/Pods-grommuniochatTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6561AEAC21CC40B8A72ABB93 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		6BAF8296411D4657B5A0E8F8 /* libRNReactNativeDocViewer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNReactNativeDocViewer.a; sourceTree = "<group>"; };
 		6EFF13DD24CE4E26953E598A /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Black.ttf"; path = "../assets/fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		71E626D4980A4560B26F0E1C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		7F0F4B0924BA173900E14C60 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SplashScreenResource/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7F151D3D221B062700FAD8F3 /* RuntimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RuntimeUtils.swift; path = Mattermost/RuntimeUtils.swift; sourceTree = "<group>"; };
-		7F151D40221B069200FAD8F3 /* 0155-keys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "0155-keys.png"; path = "Mattermost/0155-keys.png"; sourceTree = "<group>"; };
-		7F151D42221B07F700FAD8F3 /* MattermostShare-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MattermostShare-Bridging-Header.h"; sourceTree = "<group>"; };
-		7F151D43221B082A00FAD8F3 /* Mattermost-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Mattermost-Bridging-Header.h"; path = "Mattermost/Mattermost-Bridging-Header.h"; sourceTree = "<group>"; };
-		7F240A19220D3A2300637665 /* MattermostShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MattermostShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F151D3D221B062700FAD8F3 /* RuntimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RuntimeUtils.swift; path = grommuniochat/RuntimeUtils.swift; sourceTree = "<group>"; };
+		7F151D40221B069200FAD8F3 /* 0155-keys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "0155-keys.png"; path = "grommuniochat/0155-keys.png"; sourceTree = "<group>"; };
+		7F151D42221B07F700FAD8F3 /* grommuniochatShare-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "grommuniochatShare-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F151D43221B082A00FAD8F3 /* grommuniochat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "grommuniochat-Bridging-Header.h"; path = "grommuniochat/grommuniochat-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F240A19220D3A2300637665 /* grommuniochatShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = grommuniochatShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F240A1B220D3A2300637665 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		7F240A1E220D3A2300637665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7F240A20220D3A2300637665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F240A27220D3A7E00637665 /* MattermostShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MattermostShare.entitlements; sourceTree = "<group>"; };
-		7F240ACB220D460300637665 /* MattermostBucketModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MattermostBucketModule.h; path = Mattermost/MattermostBucketModule.h; sourceTree = "<group>"; };
-		7F240ACC220D460300637665 /* MattermostBucketModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MattermostBucketModule.m; path = Mattermost/MattermostBucketModule.m; sourceTree = "<group>"; };
+		7F240A27220D3A7E00637665 /* grommuniochatShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = grommuniochatShare.entitlements; sourceTree = "<group>"; };
+		7F240ACB220D460300637665 /* grommuniochatBucketModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = grommuniochatBucketModule.h; path = grommuniochat/grommuniochatBucketModule.h; sourceTree = "<group>"; };
+		7F240ACC220D460300637665 /* grommuniochatBucketModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = grommuniochatBucketModule.m; path = grommuniochat/grommuniochatBucketModule.m; sourceTree = "<group>"; };
 		7F240ACE220D4A6100637665 /* KeyChainDataSource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = KeyChainDataSource.mm; path = "../../node_modules/rn-fetch-blob/ios/KeyShareConsumer/KeyChainDataSource.mm"; sourceTree = "<group>"; };
 		7F240ACF220D4A6100637665 /* KeyChainDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyChainDataSource.h; path = "../../node_modules/rn-fetch-blob/ios/KeyShareConsumer/KeyChainDataSource.h"; sourceTree = "<group>"; };
 		7F240ADA220E089300637665 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		7F240ADC220E094A00637665 /* TeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewController.swift; sourceTree = "<group>"; };
 		7F292A701E8AB73400A450A3 /* SplashScreenResource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SplashScreenResource; sourceTree = "<group>"; };
 		7F292AA51E8ABB1100A450A3 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = SplashScreenResource/splash.png; sourceTree = "<group>"; };
-		7F325D6DAAF1047EB948EFF7 /* Pods-Mattermost-MattermostTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mattermost-MattermostTests.debug.xcconfig"; path = "Target Support Files/Pods-Mattermost-MattermostTests/Pods-Mattermost-MattermostTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7F43D6051F6BF9EB001FC614 /* libPods-Mattermost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Mattermost.a"; path = "../../../../../../../Library/Developer/Xcode/DerivedData/Mattermost-czlinsdviifujheezzjvmisotjrm/Build/Products/Debug-iphonesimulator/libPods-Mattermost.a"; sourceTree = "<group>"; };
+		7F325D6DAAF1047EB948EFF7 /* Pods-grommuniochat-grommuniochatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grommuniochat-grommuniochatTests.debug.xcconfig"; path = "Target Support Files/Pods-grommuniochat-grommuniochatTests/Pods-grommuniochat-grommuniochatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F43D6051F6BF9EB001FC614 /* libPods-grommuniochat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-grommuniochat.a"; path = "../../../../../../../Library/Developer/Xcode/DerivedData/grommuniochat-czlinsdviifujheezzjvmisotjrm/Build/Products/Debug-iphonesimulator/libPods-grommuniochat.a"; sourceTree = "<group>"; };
 		7F54ABFAE6CE4A6DB11D1ED7 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BlackItalic.ttf"; path = "../assets/fonts/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
 		7F581D32221ED5C60099E66B /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F581D34221ED5C60099E66B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		7F581D36221ED5C60099E66B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F581F77221EEA5A0099E66B /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
-		7F5BA34522B99B7B005B05D3 /* Mattermost+RCTUITextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Mattermost+RCTUITextView.h"; path = "Mattermost/Mattermost+RCTUITextView.h"; sourceTree = "<group>"; };
-		7F5BA34622B99B7B005B05D3 /* Mattermost+RCTUITextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Mattermost+RCTUITextView.m"; path = "Mattermost/Mattermost+RCTUITextView.m"; sourceTree = "<group>"; };
-		7F63D2C21E6DD98A001FAE12 /* Mattermost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Mattermost.entitlements; path = Mattermost/Mattermost.entitlements; sourceTree = "<group>"; };
+		7F5BA34522B99B7B005B05D3 /* grommuniochat+RCTUITextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "grommuniochat+RCTUITextView.h"; path = "grommuniochat/grommuniochat+RCTUITextView.h"; sourceTree = "<group>"; };
+		7F5BA34622B99B7B005B05D3 /* grommuniochat+RCTUITextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "grommuniochat+RCTUITextView.m"; path = "grommuniochat/grommuniochat+RCTUITextView.m"; sourceTree = "<group>"; };
+		7F63D2C21E6DD98A001FAE12 /* grommuniochat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = grommuniochat.entitlements; path = grommuniochat/grommuniochat.entitlements; sourceTree = "<group>"; };
 		7F72F2ED2211220500F98FFF /* GenericPreview.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericPreview.xib; sourceTree = "<group>"; };
 		7F72F2EF221123E200F98FFF /* GenericPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPreview.swift; sourceTree = "<group>"; };
 		7F72F2F222112EC700F98FFF /* generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = generic.png; sourceTree = "<group>"; };
 		7FABDFC12211A39000D0F595 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		7FABE0092212650600D0F595 /* ChannelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsViewController.swift; sourceTree = "<group>"; };
 		7FABE04022137F2900D0F595 /* UploadAttachments.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UploadAttachments.xcodeproj; path = UploadAttachments/UploadAttachments.xcodeproj; sourceTree = "<group>"; };
-		7FEB10961F6101710039A015 /* BlurAppScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurAppScreen.h; path = Mattermost/BlurAppScreen.h; sourceTree = "<group>"; };
-		7FEB10971F6101710039A015 /* BlurAppScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurAppScreen.m; path = Mattermost/BlurAppScreen.m; sourceTree = "<group>"; };
-		7FEB10991F61019C0039A015 /* MattermostManaged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MattermostManaged.h; path = Mattermost/MattermostManaged.h; sourceTree = "<group>"; };
-		7FEB109A1F61019C0039A015 /* MattermostManaged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MattermostManaged.m; path = Mattermost/MattermostManaged.m; sourceTree = "<group>"; };
-		7FEB109B1F61019C0039A015 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Mattermost/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		7FEB109C1F61019C0039A015 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Mattermost/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		7FEB10961F6101710039A015 /* BlurAppScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurAppScreen.h; path = grommuniochat/BlurAppScreen.h; sourceTree = "<group>"; };
+		7FEB10971F6101710039A015 /* BlurAppScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurAppScreen.m; path = grommuniochat/BlurAppScreen.m; sourceTree = "<group>"; };
+		7FEB10991F61019C0039A015 /* grommuniochatManaged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = grommuniochatManaged.h; path = grommuniochat/grommuniochatManaged.h; sourceTree = "<group>"; };
+		7FEB109A1F61019C0039A015 /* grommuniochatManaged.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = grommuniochatManaged.m; path = grommuniochat/grommuniochatManaged.m; sourceTree = "<group>"; };
+		7FEB109B1F61019C0039A015 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "grommuniochat/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7FEB109C1F61019C0039A015 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "grommuniochat/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		7FF2AF8A2086483E00FFBDF4 /* KeyShareConsumer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = KeyShareConsumer.storyboard; sourceTree = "<group>"; };
 		7FFE32B51FD9CCAA0038C7A0 /* FLAnimatedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FLAnimatedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFE32B61FD9CCAA0038C7A0 /* KSCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KSCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,7 +236,7 @@
 		7FFE32BF1FD9CCAA0038C7A0 /* Sentry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sentry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81061F4CBB31484A94D5A8EE /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		84E325FF229834C30055068A /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		8DEEFB3ED6175724A2653247 /* libPods-Mattermost.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mattermost.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DEEFB3ED6175724A2653247 /* libPods-grommuniochat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-grommuniochat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F0B22D2C9924FAFA7FB681C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-LightItalic.ttf"; path = "../assets/fonts/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		A734E00E7E184582A877F2B3 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Thin.ttf"; path = "../assets/fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		BC977883E2624E05975CA65B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
@@ -245,11 +245,11 @@
 		C5BD64DE829E455A997DCAD5 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		C78A387124874496AD2C1466 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Semibold.ttf"; path = "../assets/fonts/OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		D08F54E10DF14AE4BBF4E2B4 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
-		D1479CC7267CFDA0007896DB /* MattermostRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MattermostRelease.entitlements; path = Mattermost/MattermostRelease.entitlements; sourceTree = "<group>"; };
+		D1479CC7267CFDA0007896DB /* grommuniochatRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = grommuniochatRelease.entitlements; path = grommuniochat/grommuniochatRelease.entitlements; sourceTree = "<group>"; };
 		D1479CCA26861E48007896DB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		D4B1B363C2414DA19C1AC521 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		EB4F0DF36537B0B21BE962FB /* Pods-Mattermost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mattermost.debug.xcconfig"; path = "Target Support Files/Pods-Mattermost/Pods-Mattermost.debug.xcconfig"; sourceTree = "<group>"; };
-		F41672974C2907F74BB59B16 /* libPods-Mattermost-MattermostTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mattermost-MattermostTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4F0DF36537B0B21BE962FB /* Pods-grommuniochat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grommuniochat.debug.xcconfig"; path = "Target Support Files/Pods-grommuniochat/Pods-grommuniochat.debug.xcconfig"; sourceTree = "<group>"; };
+		F41672974C2907F74BB59B16 /* libPods-grommuniochat-grommuniochatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-grommuniochat-grommuniochatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBEC29EE2D3418D9AC33BD5 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../assets/fonts/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -260,7 +260,7 @@
 			files = (
 				D1479CCB26861E48007896DB /* CloudKit.framework in Frameworks */,
 				49B4C050230C981C006E919E /* libUploadAttachments.a in Frameworks */,
-				6C9B1EFD6561083917AF06CF /* libPods-Mattermost.a in Frameworks */,
+				6C9B1EFD6561083917AF06CF /* libPods-grommuniochat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,13 +283,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* MattermostTests */ = {
+		00E356EF1AD99517003FC87E /* grommuniochatTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* MattermostTests.m */,
+				00E356F21AD99517003FC87E /* grommuniochatTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = MattermostTests;
+			path = grommuniochatTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -303,7 +303,7 @@
 		0156F464626F49C2977D7982 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				499F7AF0235511FC00E7AF6E /* Mattermost-Regular.otf */,
+				499F7AF0235511FC00E7AF6E /* grommuniochat-Regular.otf */,
 				D4B1B363C2414DA19C1AC521 /* OpenSans-Bold.ttf */,
 				32AC3D4EA79E44738A6E9766 /* OpenSans-BoldItalic.ttf */,
 				3647DF63D6764CF093375861 /* OpenSans-ExtraBold.ttf */,
@@ -331,10 +331,10 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Mattermost */ = {
+		13B07FAE1A68108700A75B9A /* grommuniochat */ = {
 			isa = PBXGroup;
 			children = (
-				D1479CC7267CFDA0007896DB /* MattermostRelease.entitlements */,
+				D1479CC7267CFDA0007896DB /* grommuniochatRelease.entitlements */,
 				536CC6C223E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.h */,
 				536CC6C123E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.m */,
 				499F7A632354F51900E7AF6E /* OnPasteEventManager.h */,
@@ -352,32 +352,32 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				7FF2AF8A2086483E00FFBDF4 /* KeyShareConsumer.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				7F63D2C21E6DD98A001FAE12 /* Mattermost.entitlements */,
-				7F151D43221B082A00FAD8F3 /* Mattermost-Bridging-Header.h */,
-				7F240ACB220D460300637665 /* MattermostBucketModule.h */,
-				7F240ACC220D460300637665 /* MattermostBucketModule.m */,
-				7FEB10991F61019C0039A015 /* MattermostManaged.h */,
-				7FEB109A1F61019C0039A015 /* MattermostManaged.m */,
+				7F63D2C21E6DD98A001FAE12 /* grommuniochat.entitlements */,
+				7F151D43221B082A00FAD8F3 /* grommuniochat-Bridging-Header.h */,
+				7F240ACB220D460300637665 /* grommuniochatBucketModule.h */,
+				7F240ACC220D460300637665 /* grommuniochatBucketModule.m */,
+				7FEB10991F61019C0039A015 /* grommuniochatManaged.h */,
+				7FEB109A1F61019C0039A015 /* grommuniochatManaged.m */,
 				7FEB109B1F61019C0039A015 /* UIImage+ImageEffects.h */,
 				7FEB109C1F61019C0039A015 /* UIImage+ImageEffects.m */,
 				7F151D40221B069200FAD8F3 /* 0155-keys.png */,
 				7F292AA51E8ABB1100A450A3 /* splash.png */,
-				7F5BA34522B99B7B005B05D3 /* Mattermost+RCTUITextView.h */,
-				7F5BA34622B99B7B005B05D3 /* Mattermost+RCTUITextView.m */,
+				7F5BA34522B99B7B005B05D3 /* grommuniochat+RCTUITextView.h */,
+				7F5BA34622B99B7B005B05D3 /* grommuniochat+RCTUITextView.m */,
 				7F0F4B0924BA173900E14C60 /* LaunchScreen.storyboard */,
 			);
-			name = Mattermost;
+			name = grommuniochat;
 			sourceTree = "<group>";
 		};
 		33E107B4DC21A5C48B09F800 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EB4F0DF36537B0B21BE962FB /* Pods-Mattermost.debug.xcconfig */,
-				25BF2BACE89201DE6E585B7E /* Pods-Mattermost.release.xcconfig */,
-				57CB4735B7E57B50D0B50E16 /* Pods-MattermostTests.debug.xcconfig */,
-				297AAFCCF0BD99FC109DA2BC /* Pods-MattermostTests.release.xcconfig */,
-				7F325D6DAAF1047EB948EFF7 /* Pods-Mattermost-MattermostTests.debug.xcconfig */,
-				182D203F539AF68F1647EFAF /* Pods-Mattermost-MattermostTests.release.xcconfig */,
+				EB4F0DF36537B0B21BE962FB /* Pods-grommuniochat.debug.xcconfig */,
+				25BF2BACE89201DE6E585B7E /* Pods-grommuniochat.release.xcconfig */,
+				57CB4735B7E57B50D0B50E16 /* Pods-grommuniochatTests.debug.xcconfig */,
+				297AAFCCF0BD99FC109DA2BC /* Pods-grommuniochatTests.release.xcconfig */,
+				7F325D6DAAF1047EB948EFF7 /* Pods-grommuniochat-grommuniochatTests.debug.xcconfig */,
+				182D203F539AF68F1647EFAF /* Pods-grommuniochat-grommuniochatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -410,15 +410,15 @@
 				7FFE32BD1FD9CCAA0038C7A0 /* QuartzBookPack.framework */,
 				7FFE32BE1FD9CCAA0038C7A0 /* SDWebImage.framework */,
 				7FFE32BF1FD9CCAA0038C7A0 /* Sentry.framework */,
-				7F43D6051F6BF9EB001FC614 /* libPods-Mattermost.a */,
+				7F43D6051F6BF9EB001FC614 /* libPods-grommuniochat.a */,
 				81061F4CBB31484A94D5A8EE /* libz.tbd */,
-				8DEEFB3ED6175724A2653247 /* libPods-Mattermost.a */,
-				F41672974C2907F74BB59B16 /* libPods-Mattermost-MattermostTests.a */,
+				8DEEFB3ED6175724A2653247 /* libPods-grommuniochat.a */,
+				F41672974C2907F74BB59B16 /* libPods-grommuniochat-grommuniochatTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7F240A1A220D3A2300637665 /* MattermostShare */ = {
+		7F240A1A220D3A2300637665 /* grommuniochatShare */ = {
 			isa = PBXGroup;
 			children = (
 				84E325FF229834C30055068A /* Config.swift */,
@@ -426,9 +426,9 @@
 				7F240A20220D3A2300637665 /* Info.plist */,
 				7F240ACF220D4A6100637665 /* KeyChainDataSource.h */,
 				7F240ACE220D4A6100637665 /* KeyChainDataSource.mm */,
-				7F240A27220D3A7E00637665 /* MattermostShare.entitlements */,
+				7F240A27220D3A7E00637665 /* grommuniochatShare.entitlements */,
 				7F240A1D220D3A2300637665 /* MainInterface.storyboard */,
-				7F151D42221B07F700FAD8F3 /* MattermostShare-Bridging-Header.h */,
+				7F151D42221B07F700FAD8F3 /* grommuniochatShare-Bridging-Header.h */,
 				7F240ADA220E089300637665 /* Item.swift */,
 				7FABE0092212650600D0F595 /* ChannelsViewController.swift */,
 				7F240A1B220D3A2300637665 /* ShareViewController.swift */,
@@ -437,7 +437,7 @@
 				7F72F2EF221123E200F98FFF /* GenericPreview.swift */,
 				7FABDFC12211A39000D0F595 /* Section.swift */,
 			);
-			path = MattermostShare;
+			path = grommuniochatShare;
 			sourceTree = "<group>";
 		};
 		7F581D33221ED5C60099E66B /* NotificationService */ = {
@@ -478,12 +478,12 @@
 			isa = PBXGroup;
 			children = (
 				4953BF5F2368AE8600593328 /* SwimeProxy.swift */,
-				13B07FAE1A68108700A75B9A /* Mattermost */,
-				7F240A1A220D3A2300637665 /* MattermostShare */,
+				13B07FAE1A68108700A75B9A /* grommuniochat */,
+				7F240A1A220D3A2300637665 /* grommuniochatShare */,
 				7F581D33221ED5C60099E66B /* NotificationService */,
 				7F292A701E8AB73400A450A3 /* SplashScreenResource */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* MattermostTests */,
+				00E356EF1AD99517003FC87E /* grommuniochatTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				0156F464626F49C2977D7982 /* Resources */,
 				37DF8AC51F5F0D410079BF89 /* Recovered References */,
@@ -497,8 +497,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Mattermost.app */,
-				7F240A19220D3A2300637665 /* MattermostShare.appex */,
+				13B07F961A680F5B00A75B9A /* grommuniochat.app */,
+				7F240A19220D3A2300637665 /* grommuniochatShare.appex */,
 				7F581D32221ED5C60099E66B /* NotificationService.appex */,
 			);
 			name = Products;
@@ -507,9 +507,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* Mattermost */ = {
+		13B07F861A680F5B00A75B9A /* grommuniochat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Mattermost" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "grommuniochat" */;
 			buildPhases = (
 				484322B86D8320281D95970F /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -528,14 +528,14 @@
 				7F240A22220D3A2300637665 /* PBXTargetDependency */,
 				7F581D38221ED5C60099E66B /* PBXTargetDependency */,
 			);
-			name = Mattermost;
+			name = grommuniochat;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* Mattermost.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* grommuniochat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7F240A18220D3A2300637665 /* MattermostShare */ = {
+		7F240A18220D3A2300637665 /* grommuniochatShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F240A24220D3A2300637665 /* Build configuration list for PBXNativeTarget "MattermostShare" */;
+			buildConfigurationList = 7F240A24220D3A2300637665 /* Build configuration list for PBXNativeTarget "grommuniochatShare" */;
 			buildPhases = (
 				7F240A15220D3A2300637665 /* Sources */,
 				7F240A16220D3A2300637665 /* Frameworks */,
@@ -546,9 +546,9 @@
 			dependencies = (
 				7FAB4571222DD0DA00EBFFC8 /* PBXTargetDependency */,
 			);
-			name = MattermostShare;
-			productName = MattermostShare;
-			productReference = 7F240A19220D3A2300637665 /* MattermostShare.appex */;
+			name = grommuniochatShare;
+			productName = grommuniochatShare;
+			productReference = 7F240A19220D3A2300637665 /* grommuniochatShare.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		7F581D31221ED5C60099E66B /* NotificationService */ = {
@@ -623,7 +623,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Mattermost" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "grommuniochat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -643,8 +643,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Mattermost */,
-				7F240A18220D3A2300637665 /* MattermostShare */,
+				13B07F861A680F5B00A75B9A /* grommuniochat */,
+				7F240A18220D3A2300637665 /* grommuniochatShare */,
 				7F581D31221ED5C60099E66B /* NotificationService */,
 			);
 		};
@@ -747,7 +747,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Mattermost-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-grommuniochat-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -774,7 +774,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Mattermost/Pods-Mattermost-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-grommuniochat/Pods-grommuniochat-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -817,7 +817,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mattermost/Pods-Mattermost-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-grommuniochat/Pods-grommuniochat-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -835,10 +835,10 @@
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				7FEB10981F6101710039A015 /* BlurAppScreen.m in Sources */,
 				499F7A5F2354F49F00E7AF6E /* UIPasteboard+GetImageInfo.m in Sources */,
-				7FEB109D1F61019C0039A015 /* MattermostManaged.m in Sources */,
+				7FEB109D1F61019C0039A015 /* grommuniochatManaged.m in Sources */,
 				499F7A652354F51900E7AF6E /* OnPasteEventManager.m in Sources */,
-				7F240ACD220D460300637665 /* MattermostBucketModule.m in Sources */,
-				7F5BA34722B99B7B005B05D3 /* Mattermost+RCTUITextView.m in Sources */,
+				7F240ACD220D460300637665 /* grommuniochatBucketModule.m in Sources */,
+				7F5BA34722B99B7B005B05D3 /* grommuniochat+RCTUITextView.m in Sources */,
 				536CC6C323E79287002C478C /* RNNotificationEventHandler+HandleReplyAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -871,7 +871,7 @@
 /* Begin PBXTargetDependency section */
 		7F240A22220D3A2300637665 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7F240A18220D3A2300637665 /* MattermostShare */;
+			target = 7F240A18220D3A2300637665 /* grommuniochatShare */;
 			targetProxy = 7F240A21220D3A2300637665 /* PBXContainerItemProxy */;
 		};
 		7F581D38221ED5C60099E66B /* PBXTargetDependency */ = {
@@ -910,12 +910,12 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB4F0DF36537B0B21BE962FB /* Pods-Mattermost.debug.xcconfig */;
+			baseConfigurationReference = EB4F0DF36537B0B21BE962FB /* Pods-grommuniochat.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Mattermost/Mattermost.entitlements;
+				CODE_SIGN_ENTITLEMENTS = grommuniochat/grommuniochat.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 356;
@@ -926,7 +926,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/UploadAttachments/UploadAttachments",
 				);
-				INFOPLIST_FILE = Mattermost/Info.plist;
+				INFOPLIST_FILE = grommuniochat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
@@ -939,10 +939,10 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat;
-				PRODUCT_NAME = Mattermost;
+				PRODUCT_NAME = grommuniochat;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Mattermost/Mattermost-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "grommuniochat/grommuniochat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -952,12 +952,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25BF2BACE89201DE6E585B7E /* Pods-Mattermost.release.xcconfig */;
+			baseConfigurationReference = 25BF2BACE89201DE6E585B7E /* Pods-grommuniochat.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Mattermost/MattermostRelease.entitlements;
+				CODE_SIGN_ENTITLEMENTS = grommuniochat/grommuniochatRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 356;
@@ -968,7 +968,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/UploadAttachments/UploadAttachments",
 				);
-				INFOPLIST_FILE = Mattermost/Info.plist;
+				INFOPLIST_FILE = grommuniochat/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = (
@@ -981,10 +981,10 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat;
-				PRODUCT_NAME = Mattermost;
+				PRODUCT_NAME = grommuniochat;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "Mattermost/Mattermost-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "grommuniochat/grommuniochat-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1008,7 +1008,7 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = MattermostShare/MattermostShare.entitlements;
+				CODE_SIGN_ENTITLEMENTS = grommuniochatShare/grommuniochatShare.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1016,7 +1016,7 @@
 				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UploadAttachments/UploadAttachments";
-				INFOPLIST_FILE = MattermostShare/Info.plist;
+				INFOPLIST_FILE = grommuniochatShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -1029,7 +1029,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "MattermostShare/MattermostShare-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "grommuniochatShare/grommuniochatShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1053,7 +1053,7 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = MattermostShare/MattermostShare.entitlements;
+				CODE_SIGN_ENTITLEMENTS = grommuniochatShare/grommuniochatShare.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -1062,7 +1062,7 @@
 				DEVELOPMENT_TEAM = KB6ZAGPNG5;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UploadAttachments/UploadAttachments";
-				INFOPLIST_FILE = MattermostShare/Info.plist;
+				INFOPLIST_FILE = grommuniochatShare/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
@@ -1073,7 +1073,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MattermostShare/MattermostShare-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "grommuniochatShare/grommuniochatShare-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1256,7 +1256,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Mattermost" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "grommuniochat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1265,7 +1265,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F240A24220D3A2300637665 /* Build configuration list for PBXNativeTarget "MattermostShare" */ = {
+		7F240A24220D3A2300637665 /* Build configuration list for PBXNativeTarget "grommuniochatShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F240A25220D3A2300637665 /* Debug */,
@@ -1283,7 +1283,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Mattermost" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "grommuniochat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

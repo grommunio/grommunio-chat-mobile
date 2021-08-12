@@ -3,8 +3,8 @@ require_relative '../node_modules/@react-native-community/cli-platform-ios/nativ
 
 platform :ios, '11.0'
 
-target 'Mattermost' do
-  # Pods for Mattermost
+target 'grommuniochat' do
+  # Pods for grommuniochat
   config = use_native_modules!
   use_react_native!(
     :path => config[:reactNativePath],

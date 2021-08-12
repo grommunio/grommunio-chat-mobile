@@ -6,7 +6,7 @@
 #import <ReactNativeNavigation/ReactNativeNavigation.h>
 #import <UploadAttachments/UploadAttachments-Swift.h>
 #import <UserNotifications/UserNotifications.h>
-#import "Mattermost-Swift.h"
+#import "grommuniochat-Swift.h"
 #import <os/log.h>
 #import <RNHWKeyboardEvent.h>
 
@@ -17,9 +17,9 @@ NSString* const NOTIFICATION_CLEAR_ACTION = @"clear";
 NSString* const NOTIFICATION_UPDATE_BADGE_ACTION = @"update_badge";
 
 -(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
-  os_log(OS_LOG_DEFAULT, "Mattermost will attach session from handleEventsForBackgroundURLSession!! identifier=%{public}@", identifier);
+  os_log(OS_LOG_DEFAULT, "grommuniochat will attach session from handleEventsForBackgroundURLSession!! identifier=%{public}@", identifier);
   [[UploadSession shared] attachSessionWithIdentifier:identifier completionHandler:completionHandler];
-  os_log(OS_LOG_DEFAULT, "Mattermost session ATTACHED from handleEventsForBackgroundURLSession!! identifier=%{public}@", identifier);
+  os_log(OS_LOG_DEFAULT, "grommuniochat session ATTACHED from handleEventsForBackgroundURLSession!! identifier=%{public}@", identifier);
 }
 
 - (NSArray<id<RCTBridgeModule>> *)extraModulesForBridge:(RCTBridge *)bridge {
@@ -60,7 +60,7 @@ NSString* const NOTIFICATION_UPDATE_BADGE_ACTION = @"update_badge";
 
   [RNNotifications startMonitorNotifications];
 
-  os_log(OS_LOG_DEFAULT, "Mattermost started!!");
+  os_log(OS_LOG_DEFAULT, "grommuniochat started!!");
 
 
   return YES;

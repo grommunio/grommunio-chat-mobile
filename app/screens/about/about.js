@@ -22,7 +22,7 @@ import {changeOpacity, makeStyleSheetFromTheme} from '@utils/theme';
 import {tryOpenURL} from '@utils/url';
 import GrammmIcon from '@components/grammm_icon';
 
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
+const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat', 'com.mattermost.rn'];
 
 export default class About extends PureComponent {
     static propTypes = {

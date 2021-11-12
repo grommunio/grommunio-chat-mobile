@@ -82,7 +82,7 @@ class Settings extends PureComponent {
     goToAbout = preventDoubleTap(() => {
         const {intl, config} = this.props;
         const screen = 'About';
-        const title = intl.formatMessage({id: 'about.title', defaultMessage: 'About {appTitle}'}, {appTitle: config.SiteName || 'Mattermost'});
+        const title = intl.formatMessage({id: 'about.title', defaultMessage: 'About {appTitle}'}, {appTitle: config.SiteName || 'grommunio-chat'});
 
         goToScreen(screen, title);
     });
@@ -237,7 +237,7 @@ class Settings extends PureComponent {
                     <SettingsItem
                         testID='general_settings.about.action'
                         defaultMessage='About {appTitle}'
-                        messageValues={{appTitle: config.SiteName || 'Mattermost'}}
+                        messageValues={{appTitle: config.SiteName || 'grommunio-chat'}}
                         i18nId={t('about.title')}
                         iconName='information-outline'
                         onPress={this.goToAbout}

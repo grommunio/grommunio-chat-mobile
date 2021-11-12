@@ -25,7 +25,7 @@ export async function isAuthorized(intl: typeof intlShape): Promise<boolean> {
 
         if (config) {
             const authNeeded = config.inAppPinCode && config.inAppPinCode === 'true';
-            const vendor = config.vendor || 'Mattermost';
+            const vendor = config.vendor || 'grommunio';
             if (authNeeded) {
                 const isSecured = await mattermostManaged.isDeviceSecure();
                 if (isSecured) {

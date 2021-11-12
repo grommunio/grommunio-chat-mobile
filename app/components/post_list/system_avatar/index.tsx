@@ -4,7 +4,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import GrammmIcon from '@components/grammm_icon';
+import GrommunioIcon from '@components/grommunio_icon';
 
 const styles = StyleSheet.create({
     profilePictureContainer: {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
 const SystemAvatar = () => {
     return (
         <View style={styles.profilePictureContainer}>
-            <GrammmIcon style={styles.logo}/>
+            <GrommunioIcon style={styles.logo}/>
         </View>
     );
 };

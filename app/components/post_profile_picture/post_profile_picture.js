@@ -1,17 +1,17 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import React, {PureComponent} from 'react';
 import {Platform, StyleSheet, View} from 'react-native';
 import FastImage from 'react-native-fast-image';
 
 import CompassIcon from '@components/compass_icon';
+import GrommunioIcon from '@components/grommunio_icon';
 import ProfilePicture from '@components/profile_picture';
 import TouchableWithFeedback from '@components/touchable_with_feedback';
 import {ViewTypes} from '@constants';
 import {emptyFunction} from '@utils/general';
-import GrammmIcon from '@components/grammm_icon';
 
 export default class PostProfilePicture extends PureComponent {
     static propTypes = {
@@ -46,7 +46,7 @@ export default class PostProfilePicture extends PureComponent {
         if (isSystemMessage && !fromAutoResponder && !isBot) {
             return (
                 <View style={style.buffer}>
-                    <GrammmIcon style={style.logo}/>
+                    <GrommunioIcon style={style.logo}/>
                 </View>
             );
         }

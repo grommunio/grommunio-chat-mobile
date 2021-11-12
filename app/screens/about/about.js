@@ -16,11 +16,11 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 import Config from '@assets/config';
 import FormattedText from '@components/formatted_text';
+import GrommunioIcon from '@components/grommunio_icon';
 import StatusBar from '@components/status_bar';
 import AboutLinks from '@constants/about_links';
 import {changeOpacity, makeStyleSheetFromTheme} from '@utils/theme';
 import {tryOpenURL} from '@utils/url';
-import GrammmIcon from '@components/grammm_icon';
 
 const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat', 'com.mattermost.rn'];
 
@@ -93,7 +93,7 @@ export default class About extends PureComponent {
             <View style={style.learnContainer}>
                 <FormattedText
                     id='about.teamEditionLearn'
-                    defaultMessage='Join the grammm community at '
+                    defaultMessage='Join the grommunio community at '
                     style={style.learn}
                     testID='about.learn_more'
                 />
@@ -186,7 +186,7 @@ export default class About extends PureComponent {
                     testID='about.scroll_view'
                 >
                     <View style={style.logoContainer}>
-                        <GrammmIcon style={style.logo}/>
+                        <GrommunioIcon style={style.logo}/>
                     </View>
                     <View style={style.infoContainer}>
                         <View style={style.titleContainer}>
@@ -222,7 +222,7 @@ export default class About extends PureComponent {
                         {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
                             <FormattedText
                                 id='mobile.about.powered_by'
-                                defaultMessage='{site} is powered by grammm'
+                                defaultMessage='{site} is powered by grommunio'
                                 style={style.footerText}
                                 values={{
                                     site: this.props.config.SiteName,
@@ -231,8 +231,8 @@ export default class About extends PureComponent {
                             />
                         }
                         <FormattedText
-                            id='mobile.about.grammm_copyright'
-                            defaultMessage='Copyright 2021-{currentYear} grammm GmbH. All rights reserved'
+                            id='mobile.about.grommunio_copyright'
+                            defaultMessage='Copyright 2021-{currentYear} grommunio GmbH. All rights reserved'
                             style={[style.footerText, style.copyrightText]}
                             values={{
                                 currentYear: new Date().getFullYear(),

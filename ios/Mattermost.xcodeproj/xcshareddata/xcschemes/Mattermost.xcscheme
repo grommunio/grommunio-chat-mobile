@@ -134,6 +134,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "grommunio chat"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

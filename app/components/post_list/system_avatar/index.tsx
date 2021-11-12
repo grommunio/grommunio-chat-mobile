@@ -4,14 +4,7 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
 
-import CompassIcon from '@components/compass_icon';
-import {ViewTypes} from '@constants';
-
-import type {Theme} from '@mm-redux/types/theme';
-
-type Props = {
-    theme: Theme;
-}
+import GrammmIcon from '@components/grammm_icon';
 
 const styles = StyleSheet.create({
     profilePictureContainer: {
@@ -20,16 +13,16 @@ const styles = StyleSheet.create({
         marginRight: 13,
         marginTop: 10,
     },
+    logo: {
+        width: 40,
+        height: 40,
+    },
 });
 
-const SystemAvatar = ({theme}: Props) => {
+const SystemAvatar = () => {
     return (
         <View style={styles.profilePictureContainer}>
-            <CompassIcon
-                name='mattermost'
-                color={theme.centerChannelColor}
-                size={ViewTypes.PROFILE_PICTURE_SIZE}
-            />
+            <GrammmIcon style={styles.logo}/>
         </View>
     );
 };

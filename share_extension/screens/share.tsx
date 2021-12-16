@@ -144,7 +144,7 @@ const Share = ({intl}: ShareProps) => {
             headerLeft: leftButton,
             title: intl.formatMessage({
                 id: 'mobile.extension.title',
-                defaultMessage: 'Share in Mattermost',
+                defaultMessage: 'Share in grommunio chat',
             }),
         });
     }, [navigation]);

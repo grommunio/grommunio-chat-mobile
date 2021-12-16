@@ -1,4 +1,4 @@
-// Copyright (c) 2015-present grommuniochat, Inc. All Rights Reserved.
+// Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
 import 'react-native/Libraries/Core/InitializeCore';

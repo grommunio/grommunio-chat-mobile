@@ -107,7 +107,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.mattermost.rnbeta"
+        applicationId "com.grommunio.chat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 482
@@ -118,12 +118,10 @@ android {
 
     signingConfigs {
         release {
-            if (project.hasProperty('MATTERMOST_RELEASE_STORE_FILE')) {
-                storeFile file(MATTERMOST_RELEASE_STORE_FILE)
-                storePassword MATTERMOST_RELEASE_PASSWORD
-                keyAlias MATTERMOST_RELEASE_KEY_ALIAS
-                keyPassword MATTERMOST_RELEASE_PASSWORD
-            }
+            storeFile file("grommunio-keystore.keystore")
+            storePassword GROMMUNIO_CHAT_RELEASE_PASSWORD // Configure in $HOME/.gradle/gradle.properties
+            keyAlias GROMMUNIO_CHAT_RELEASE_KEY_ALIAS // Configure in $HOME/.gradle/gradle.properties
+            keyPassword GROMMUNIO_CHAT_RELEASE_PASSWORD
         }
         debug {
             storeFile file('debug.keystore')

@@ -6,4 +6,6 @@ export default {
     DEFAULT_ON: 'default_on',
     DISABLED: 'disabled',
     TRUE: 'true',
+    TERMS_OF_SERVICE: 'https://docs.grommunio.com/chat',
+    PRIVACY_POLICY: 'https://docs.grommunio.com/chat',
 };

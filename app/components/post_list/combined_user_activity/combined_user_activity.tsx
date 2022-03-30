@@ -245,7 +245,7 @@ const CombinedUserActivity = ({
                 cancelTouchOnPanning={true}
             >
                 <View style={styles.container}>
-                    <SystemAvatar theme={theme}/>
+                    <SystemAvatar/>
                     <View style={styles.content}>
                         <SystemHeader
                             createAt={post.create_at}

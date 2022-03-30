@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroupIdentifier</key>
-	<string>group.com.mattermost.rnbeta</string>
+	<string>group.grommunio.com.chat</string>
 	<key>BundleEntryFilename</key>
 	<string>index.js</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Mattermost Beta</string>
+	<string>grommunio chat</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mattermost.rnbeta</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,7 +28,7 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.mattermost</string>
+			<string>grommunio.com</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>mattermost</string>
@@ -58,19 +58,19 @@
 		</dict>
 	</dict>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Let Mattermost access your Media files</string>
+	<string>Let grommunio chat access your Media files</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Take a Photo or Video and upload it to your Mattermost instance</string>
+	<string>Take a Photo or Video and upload it to your grommunio chat instance</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Mattermost uses Face ID to restrict unauthorized users from accessing the app.</string>
+	<string>grommunio chat uses Face ID to restrict unauthorized users from accessing the app.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Capture audio when recording a video to share to your Mattermost instance</string>
+	<string>Capture audio when recording a video to share to your grommunio chat instance</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Save downloaded Photos and Videos from your Mattermost instance to your device</string>
+	<string>Save downloaded Photos and Videos from your grommunio chat instance to your device</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Upload Photos and Videos from your device to your Mattermost instance</string>
+	<string>Upload Photos and Videos from your device to your grommunio chat instance</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>Send voice messages to your Mattermost instance</string>
+	<string>Send voice messages to your grommunio chat instance</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>OpenSans-Bold.ttf</string>

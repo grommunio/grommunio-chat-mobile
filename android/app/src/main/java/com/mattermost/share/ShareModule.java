@@ -9,7 +9,7 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.Arguments;
-import com.mattermost.rnbeta.MainApplication;
+import com.grommunio.chat.MainApplication;
 
 import android.app.Activity;
 import android.content.Intent;

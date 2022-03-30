@@ -15,19 +15,18 @@ import DeviceInfo from 'react-native-device-info';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import Config from '@assets/config';
-import CompassIcon from '@components/compass_icon';
 import FormattedText from '@components/formatted_text';
+import GrommunioIcon from '@components/grommunio_icon';
 import StatusBar from '@components/status_bar';
 import AboutLinks from '@constants/about_links';
 import {changeOpacity, makeStyleSheetFromTheme} from '@utils/theme';
 import {tryOpenURL} from '@utils/url';
 
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
+const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat', 'com.mattermost.rn'];
 
 export default class About extends PureComponent {
     static propTypes = {
         config: PropTypes.object.isRequired,
-        license: PropTypes.object.isRequired,
         theme: PropTypes.object.isRequired,
     };
 
@@ -78,19 +77,10 @@ export default class About extends PureComponent {
     };
 
     render() {
-        const {theme, config, license} = this.props;
+        const {theme, config} = this.props;
         const style = getStyleSheet(theme);
 
-        let title = (
-            <FormattedText
-                id='about.teamEditiont0'
-                defaultMessage='Team Edition'
-                style={style.title}
-                testID='about.title'
-            />
-        );
-
-        let subTitle = (
+        const subTitle = (
             <FormattedText
                 id='about.teamEditionSt'
                 defaultMessage='All your team communication in one place, instantly searchable and accessible anywhere.'
@@ -99,11 +89,11 @@ export default class About extends PureComponent {
             />
         );
 
-        let learnMore = (
+        const learnMore = (
             <View style={style.learnContainer}>
                 <FormattedText
                     id='about.teamEditionLearn'
-                    defaultMessage='Join the Mattermost community at '
+                    defaultMessage='Join the grommunio community at '
                     style={style.learn}
                     testID='about.learn_more'
                 />
@@ -119,73 +109,6 @@ export default class About extends PureComponent {
                 </TouchableOpacity>
             </View>
         );
-
-        let licensee;
-        if (config.BuildEnterpriseReady === 'true') {
-            title = (
-                <FormattedText
-                    id='about.teamEditiont1'
-                    defaultMessage='Enterprise Edition'
-                    style={style.title}
-                    testID='about.title'
-                />
-            );
-
-            subTitle = (
-                <FormattedText
-                    id='about.enterpriseEditionSt'
-                    defaultMessage='Modern communication from behind your firewall.'
-                    style={style.subtitle}
-                    testID='about.subtitle'
-                />
-            );
-
-            learnMore = (
-                <View style={style.learnContainer}>
-                    <FormattedText
-                        id='about.enterpriseEditionLearn'
-                        defaultMessage='Learn more about Enterprise Edition at '
-                        style={style.learn}
-                        testID='about.learn_more'
-                    />
-                    <TouchableOpacity
-                        onPress={this.handleAboutEnterprise}
-                    >
-                        <Text
-                            style={style.learnLink}
-                            testID='about.learn_more.url'
-                        >
-                            {Config.EELearnURL}
-                        </Text>
-                    </TouchableOpacity>
-                </View>
-            );
-
-            if (license.IsLicensed === 'true') {
-                title = (
-                    <FormattedText
-                        id='about.enterpriseEditione1'
-                        defaultMessage='Enterprise Edition'
-                        style={style.title}
-                        testID='about.title'
-                    />
-                );
-
-                licensee = (
-                    <View style={style.licenseContainer}>
-                        <FormattedText
-                            id='mobile.about.licensed'
-                            defaultMessage='Licensed to: {company}'
-                            style={style.info}
-                            values={{
-                                company: license.Company,
-                            }}
-                            testID='about.licensee'
-                        />
-                    </View>
-                );
-            }
-        }
 
         let serverVersion;
         if (config.BuildNumber === config.Version) {
@@ -263,12 +186,7 @@ export default class About extends PureComponent {
                     testID='about.scroll_view'
                 >
                     <View style={style.logoContainer}>
-                        <CompassIcon
-                            name='mattermost'
-                            color={theme.centerChannelColor}
-                            size={120}
-                            testID='about.logo'
-                        />
+                        <GrommunioIcon style={style.logo}/>
                     </View>
                     <View style={style.infoContainer}>
                         <View style={style.titleContainer}>
@@ -278,7 +196,6 @@ export default class About extends PureComponent {
                             >
                                 {`${config.SiteName} `}
                             </Text>
-                            {title}
                         </View>
                         {subTitle}
                         <FormattedText
@@ -301,12 +218,11 @@ export default class About extends PureComponent {
                             }}
                             testID='about.database'
                         />
-                        {licensee}
                         {learnMore}
                         {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
                             <FormattedText
                                 id='mobile.about.powered_by'
-                                defaultMessage='{site} is powered by Mattermost'
+                                defaultMessage='{site} is powered by grommunio'
                                 style={style.footerText}
                                 values={{
                                     site: this.props.config.SiteName,
@@ -314,6 +230,15 @@ export default class About extends PureComponent {
                                 testID='about.powered_by'
                             />
                         }
+                        <FormattedText
+                            id='mobile.about.grommunio_copyright'
+                            defaultMessage='Copyright 2021-{currentYear} grommunio GmbH. All rights reserved'
+                            style={[style.footerText, style.copyrightText]}
+                            values={{
+                                currentYear: new Date().getFullYear(),
+                            }}
+                            testID='about.copyright'
+                        />
                         <FormattedText
                             id='mobile.about.copyright'
                             defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved'
@@ -327,34 +252,6 @@ export default class About extends PureComponent {
                             {termsOfService}
                             {tosPrivacyHyphen}
                             {privacyPolicy}
-                        </View>
-                        <View style={style.noticeContainer}>
-                            <View style={style.footerGroup}>
-                                <FormattedText
-                                    id='mobile.notice_text'
-                                    defaultMessage='Mattermost is made possible by the open source software used in our {platform} and {mobile}.'
-                                    style={style.footerText}
-                                    values={{
-                                        platform: (
-                                            <FormattedText
-                                                id='mobile.notice_platform_link'
-                                                defaultMessage='server'
-                                                style={style.noticeLink}
-                                                onPress={this.handlePlatformNotice}
-                                            />
-                                        ),
-                                        mobile: (
-                                            <FormattedText
-                                                id='mobile.notice_mobile_link'
-                                                defaultMessage='mobile apps'
-                                                style={[style.noticeLink, {marginLeft: 5}]}
-                                                onPress={this.handleMobileNotice}
-                                            />
-                                        ),
-                                    }}
-                                    testID='about.notice_text'
-                                />
-                            </View>
                         </View>
                         <View style={style.hashContainer}>
                             <View style={style.footerGroup}>
@@ -504,6 +401,10 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
             flex: 1,
             flexDirection: 'row',
             marginBottom: 10,
+        },
+        logo: {
+            width: 200,
+            height: 200,
         },
     };
 });

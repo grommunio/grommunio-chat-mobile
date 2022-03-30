@@ -47,7 +47,7 @@ const style = StyleSheet.create({
 
 const Avatar = ({enablePostIconOverride, intl, isBoot, pendingPostStyle, post, theme, userId}: AvatarProps) => {
     if (isSystemMessage(post) && !fromAutoResponder(post) && !isBoot) {
-        return (<SystemAvatar theme={theme}/>);
+        return (<SystemAvatar/>);
     }
 
     const closeButton = useRef<ImageSource>();

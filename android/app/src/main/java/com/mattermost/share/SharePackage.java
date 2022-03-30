@@ -5,7 +5,7 @@ import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.ReactPackage;
-import com.mattermost.rnbeta.MainApplication;
+import com.grommunio.chat.MainApplication;
 
 import java.util.Arrays;
 import java.util.Collections;

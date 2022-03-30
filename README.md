@@ -19,7 +19,7 @@ We plan on releasing monthly updates with new features - check the [changelog](h
 To help with testing app updates before they're released, you can:
 
 1. Sign up to be a beta tester
-   - [Android](https://play.google.com/apps/testing/com.mattermost.rnbeta)
+   - [Android](https://play.google.com/apps/testing/com.grommunio.chat)
    - [iOS](https://testflight.apple.com/join/Q7Rx7K9P) - Open this link from your iOS device
 2. Install the `Mattermost Beta` app. New updates in the Beta app are released periodically. You will receive a notification when the new updates are available.
 3. File any bugs you find by filing a [GitHub issue](https://github.com/mattermost/mattermost-mobile/issues) with:
@@ -31,7 +31,7 @@ To help with testing app updates before they're released, you can:
    - Join the [Native Mobile Apps channel](https://pre-release.mattermost.com/core/channels/native-mobile-apps) to see what's new and discuss feedback with other contributors and the core team
    
 You can leave the Beta testing program at any time:
-- On Android, [click this link](https://play.google.com/apps/testing/com.mattermost.rnbeta) while logged in with your Google Play email address used to opt-in for the Beta program, then click **Leave the program**. 
+- On Android, [click this link](https://play.google.com/apps/testing/com.grommunio.chat) while logged in with your Google Play email address used to opt-in for the Beta program, then click **Leave the program**. 
 - On iOS, access the `Mattermost Beta` app page in TestFlight and click **Stop Testing**.
 
 ### Contribute Code 

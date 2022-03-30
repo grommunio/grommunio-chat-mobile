@@ -193,7 +193,7 @@
     "mmjstool": "mmjstool",
     "pod-install": "cd ios && bundle exec pod install",
     "postinstall": "patch-package && ./scripts/postinstall.sh",
-    "preinstall": "./scripts/preinstall.sh && npx solidarity",
+    "preinstall": "./scripts/preinstall.sh",
     "start": "react-native start",
     "test": "jest --forceExit --runInBand",
     "test:coverage": "jest --coverage",

@@ -39,7 +39,7 @@ const LearnMore = ({config, onPress}: LearnMoreProps) => {
     const style = getStyleSheet(theme);
 
     let id = t('about.teamEditionLearn');
-    let defaultMessage = 'Join the Mattermost community at ';
+    let defaultMessage = 'Join the grommunio community at ';
     const url = Config.WebsiteURL;
 
     if (config.BuildEnterpriseReady === 'true') {

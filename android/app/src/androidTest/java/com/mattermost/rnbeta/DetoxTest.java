@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.grommunio.chat;
 
 import com.wix.detox.Detox;
 import com.wix.detox.config.DetoxConfig;

@@ -265,7 +265,7 @@ const About = ({componentId, config, license}: AboutProps) => {
                 />
                 {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
                     <FormattedText
-                        defaultMessage='{site} is powered by Mattermost'
+                        defaultMessage='{site} is powered by grommunio-chat'
                         id={t('settings.about.powered_by')}
                         style={styles.footerText}
                         testID='about.powered_by'
@@ -279,6 +279,13 @@ const About = ({componentId, config, license}: AboutProps) => {
                     testID='about.copyright'
                     values={{currentYear: new Date().getFullYear()}}
                 />
+                <FormattedText
+                    defaultMessage='Copyright 2023-{currentYear} grommunio-chat, Inc. All rights reserved'
+                    id={t('settings.about.copyright.grommunio')}
+                    style={[styles.footerText, styles.copyrightText]}
+                    testID='about.copyright.grommunio'
+                    values={{currentYear: new Date().getFullYear()}}
+                />
                 <View style={styles.tosPrivacyContainer}>
                     <TosPrivacyContainer
                         config={config}
@@ -289,7 +296,7 @@ const About = ({componentId, config, license}: AboutProps) => {
                 <View style={styles.noticeContainer}>
                     <FormattedText
                         id={t('settings.notice_text')}
-                        defaultMessage='Mattermost is made possible by the open source software used in our {platform} and {mobile}.'
+                        defaultMessage='grommunio-chat is made possible by the open source software used in our {platform} and {mobile}.'
                         style={styles.footerText}
                         values={{
                             platform: (

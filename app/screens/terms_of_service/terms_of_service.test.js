@@ -30,7 +30,7 @@ describe('TermsOfService', () => {
         closeButton: {},
         componentId: 'component-id',
         isSupportedServer: true,
-        siteName: 'Mattermost',
+        siteName: 'grommunio-chat',
         showUnsupportedServer: jest.fn(),
         theme: Preferences.THEMES.denim,
     };

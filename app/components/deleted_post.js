@@ -22,7 +22,7 @@ class DeletedPost extends PureComponent {
             <View style={style.main}>
                 <View style={style.iconContainer}>
                     <CompassIcon
-                        name='mattermost'
+                        name='grommunio'
                         color={theme.centerChannelColor}
                         size={ViewTypes.PROFILE_PICTURE_SIZE}
                     />

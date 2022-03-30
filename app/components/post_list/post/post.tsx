@@ -201,7 +201,7 @@ const Post = ({
         postAvatar = <View style={styles.consecutivePostContainer}/>;
     } else {
         postAvatar = isAutoResponder ? (
-            <SystemAvatar theme={theme}/>
+            <SystemAvatar/>
         ) : (
             <Avatar
                 pendingPostStyle={pendingPostStyle}

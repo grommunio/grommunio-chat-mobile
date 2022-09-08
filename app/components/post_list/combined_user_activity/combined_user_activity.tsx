@@ -229,33 +229,35 @@ const CombinedUserActivity = ({
                 underlayColor={changeOpacity(theme.centerChannelColor, 0.1)}
             >
                 <View style={styles.container}>
-                    <SystemAvatar theme={{
-                        type: undefined,
-                        sidebarBg: '',
-                        sidebarText: '',
-                        sidebarUnreadText: '',
-                        sidebarTextHoverBg: '',
-                        sidebarTextActiveBorder: '',
-                        sidebarTextActiveColor: '',
-                        sidebarHeaderBg: '',
-                        sidebarHeaderTextColor: '',
-                        sidebarTeamBarBg: '',
-                        onlineIndicator: '',
-                        awayIndicator: '',
-                        dndIndicator: '',
-                        mentionBg: '',
-                        mentionColor: '',
-                        centerChannelBg: '',
-                        centerChannelColor: '',
-                        newMessageSeparator: '',
-                        linkColor: '',
-                        buttonBg: '',
-                        buttonColor: '',
-                        errorTextColor: '',
-                        mentionHighlightBg: '',
-                        mentionHighlightLink: '',
-                        codeTheme: ''
-                    }}/>
+                    <SystemAvatar
+                        theme={{
+                            type: undefined,
+                            sidebarBg: '',
+                            sidebarText: '',
+                            sidebarUnreadText: '',
+                            sidebarTextHoverBg: '',
+                            sidebarTextActiveBorder: '',
+                            sidebarTextActiveColor: '',
+                            sidebarHeaderBg: '',
+                            sidebarHeaderTextColor: '',
+                            sidebarTeamBarBg: '',
+                            onlineIndicator: '',
+                            awayIndicator: '',
+                            dndIndicator: '',
+                            mentionBg: '',
+                            mentionColor: '',
+                            centerChannelBg: '',
+                            centerChannelColor: '',
+                            newMessageSeparator: '',
+                            linkColor: '',
+                            buttonBg: '',
+                            buttonColor: '',
+                            errorTextColor: '',
+                            mentionHighlightBg: '',
+                            mentionHighlightLink: '',
+                            codeTheme: '',
+                        }}
+                    />
                     <View style={styles.content}>
                         <SystemHeader
                             createAt={post.create_at}

@@ -348,7 +348,7 @@ PODS:
     - React-perflogger (= 0.67.2)
   - ReactNativeExceptionHandler (2.10.10):
     - React-Core
-  - ReactNativeIncallManager (3.3.0):
+  - ReactNativeIncallManager (4.0.0):
     - React-Core
   - ReactNativeKeyboardTrackingView (5.7.0):
     - React
@@ -789,7 +789,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 2450b43df7ffe8e805a0b3dcb2abd4282f1f1836
   ReactCommon: d98c6c96b567f9b3a15f9fd4cc302c1eda8e3cf2
   ReactNativeExceptionHandler: b11ff67c78802b2f62eed0e10e75cb1ef7947c60
-  ReactNativeIncallManager: 642c22630caadff0a0619413aff4a9da08d63df9
+  ReactNativeIncallManager: b169b57d3064d8f62478f8fc3c485da6c75045d1
   ReactNativeKeyboardTrackingView: 02137fac3b2ebd330d74fa54ead48b14750a2306
   ReactNativeNavigation: 6e747bdf88f138088a105285274170b3fc0404ed
   rn-fetch-blob: 17961aec08caae68bb8fc0e5b40f93b3acfa6932
@@ -822,6 +822,6 @@ SPEC CHECKSUMS:
   Yoga: 9b6696970c3289e8dea34b3eda93f23e61fb8121
   YoutubePlayer-in-WKWebView: 4fca3b4f6f09940077bfbae7bddb771f2b43aacd
 
-PODFILE CHECKSUM: 8214414d5676358401d8ad51dff19e7fd8c71b5c
+PODFILE CHECKSUM: 5822094ed704e10464d48e2599e0022491e07d02
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2

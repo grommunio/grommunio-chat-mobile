@@ -28,7 +28,7 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>grommunio.com</string>
+			<string>com.mattermost</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>mattermost</string>
@@ -37,7 +37,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>454</string>
+	<string>456</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSRequiresIPhoneOS</key>

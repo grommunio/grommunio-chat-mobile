@@ -32,7 +32,7 @@ import TosPrivacyContainer from './tos_privacy';
 
 import type {AvailableScreens} from '@typings/screens/navigation';
 
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
+const MATTERMOST_BUNDLE_IDS = ['com.grommunio.rnbeta', 'com.grommunio.rn'];
 
 const getStyleSheet = makeStyleSheetFromTheme((theme) => {
     return {

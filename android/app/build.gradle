@@ -100,7 +100,7 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
-    namespace "com.mattermost.rnbeta"
+    namespace "com.grommunio.rnbeta"
 
     lintOptions {
         checkReleaseBuilds false

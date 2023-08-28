@@ -219,7 +219,7 @@ export default class ClientBase {
     }
 
     getAppsProxyRoute() {
-        return this.getPluginRoute('com.mattermost.apps');
+        return this.getPluginRoute('com.grommunio.apps');
     }
 
     getCallsRoute() {

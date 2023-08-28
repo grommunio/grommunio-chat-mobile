@@ -775,7 +775,7 @@ platform :android do
       Dir.glob(".#{release_dir}*.kt") do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'package com.mattermost.rnbeta',
+            old_string: 'package com.grommunio.rnbeta',
             new_string: "package #{package_id}"
         )
       end
@@ -791,7 +791,7 @@ platform :android do
       Dir.glob('../android/app/src/main/java/com/mattermost/helpers/*.java') do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'import com.mattermost.rnbeta.*;',
+            old_string: 'import com.grommunio.rnbeta.*;',
             new_string: "import #{package_id}.*;"
         )
       end
@@ -799,7 +799,7 @@ platform :android do
       Dir.glob('../android/app/src/main/java/com/mattermost/helpers/*.kt') do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'import com.mattermost.rnbeta.*',
+            old_string: 'import com.grommunio.rnbeta.*',
             new_string: "import #{package_id}.*"
         )
       end

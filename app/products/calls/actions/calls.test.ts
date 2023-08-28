@@ -61,7 +61,7 @@ const mockClient = {
     getPluginsManifests: jest.fn(() => (
         [
             {id: 'playbooks'},
-            {id: 'com.mattermost.calls'},
+            {id: 'com.grommunio.calls'},
         ]
     )),
     enableChannelCalls: jest.fn(),

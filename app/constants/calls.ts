@@ -12,7 +12,7 @@ const RequiredServer = {
     PATCH_VERSION: 0,
 };
 
-const PluginId = 'com.mattermost.calls';
+const PluginId = 'com.grommunio.calls';
 
 const REACTION_TIMEOUT = 10000;
 const REACTION_LIMIT = 20;

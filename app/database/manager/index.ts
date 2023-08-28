@@ -527,7 +527,7 @@ class DatabaseManager {
     * On iOS, it will point towards the AppGroup shared directory while on Android, it will point towards the Files Directory.
     * Please note that in each case, the *.db files will be created/grouped under a 'databases' sub-folder.
     * iOS Simulator : appGroup => /Users/{username}/Library/Developer/CoreSimulator/Devices/DA6F1C73/data/Containers/Shared/AppGroup/ACA65327/databases"}
-    * Android Device: file:///data/user/0/com.mattermost.rnbeta/files/databases
+    * Android Device: file:///data/user/0/com.grommunio.rnbeta/files/databases
     *
     * @param {string} dbName
     * @returns {string}

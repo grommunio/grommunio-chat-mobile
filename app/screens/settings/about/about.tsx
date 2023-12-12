@@ -4,12 +4,11 @@
 import Clipboard from '@react-native-clipboard/clipboard';
 import React, {useCallback, useMemo} from 'react';
 import {useIntl} from 'react-intl';
-import {Alert, Text, View} from 'react-native';
+import {Alert, Text, View, Image} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
 import Config from '@assets/config.json';
 import Button from '@components/button';
-import CompassIcon from '@components/compass_icon';
 import FormattedText from '@components/formatted_text';
 import SettingContainer from '@components/settings/container';
 import AboutLinks from '@constants/about_links';
@@ -31,6 +30,8 @@ import TosPrivacyContainer from './tos_privacy';
 import type {AvailableScreens} from '@typings/screens/navigation';
 
 const MATTERMOST_BUNDLE_IDS = ['com.grommunio.rnbeta', 'com.grommunio.rn'];
+
+const logo = require('@assets/images/grommunio_favicon-triangle_light_512.png');
 
 const getStyleSheet = makeStyleSheetFromTheme((theme) => {
     return {
@@ -104,6 +105,10 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
             backgroundColor: changeOpacity(theme.centerChannelColor, 0.2),
             alignSelf: 'stretch',
             marginVertical: 20,
+        },
+        logo: {
+            width: 200,
+            height: 200,
         },
     };
 });
@@ -187,15 +192,12 @@ const About = ({componentId, config, license}: AboutProps) => {
     return (
         <SettingContainer testID='about'>
             <View style={styles.logoContainer}>
-                <CompassIcon
-                    color={theme.centerChannelColor}
-                    name='mattermost'
-                    size={88}
-                    testID='about.logo'
+                <Image
+                    source={logo}
+                    style={styles.logo}
                 />
                 <Title
                     config={config}
-                    license={license}
                 />
                 <Subtitle config={config}/>
                 <View

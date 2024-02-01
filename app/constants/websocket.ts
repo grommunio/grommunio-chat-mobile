@@ -57,7 +57,7 @@ const WebsocketEvents = {
     THREAD_READ_CHANGED: 'thread_read_changed',
     DELETE_TEAM: 'delete_team',
     RESTORE_TEAM: 'restore_team',
-    APPS_FRAMEWORK_REFRESH_BINDINGS: 'custom_com.mattermost.apps_refresh_bindings',
+    APPS_FRAMEWORK_REFRESH_BINDINGS: 'custom_com.grommunio.apps_refresh_bindings',
     CALLS_CHANNEL_ENABLED: `custom_${Calls.PluginId}_channel_enable_voice`,
     CALLS_CHANNEL_DISABLED: `custom_${Calls.PluginId}_channel_disable_voice`,
     CALLS_USER_CONNECTED: `custom_${Calls.PluginId}_user_connected`,

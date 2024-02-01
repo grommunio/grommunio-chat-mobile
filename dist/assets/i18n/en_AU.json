@@ -696,7 +696,7 @@
     "account.settings": "Settings",
     "account.logout_from": "Log out of {serverName}",
     "account.logout": "Log out",
-    "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved.",
+    "settings.about.copyright": "Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved.",
     "settings.about.build": "{version} (Build {number})",
     "settings.about": "About {appTitle}",
     "settings_display.timezone.select": "Select Timezone",

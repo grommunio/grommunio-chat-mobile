@@ -934,7 +934,7 @@
     "snack.bar.mute.channel": "此频道已静音",
     "share_feedback.button.no": "不用了，谢谢",
     "settings.notifications": "通知",
-    "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
+    "settings.about.copyright": "Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved",
     "settings_display.timezone.manual": "更改时区",
     "servers.edit": "编辑",
     "server_upgrade.dismiss": "解散",

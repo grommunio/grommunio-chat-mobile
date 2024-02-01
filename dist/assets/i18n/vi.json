@@ -771,7 +771,7 @@
     "settings_display.crt.desc": "Khi được bật, các tin nhắn trả lời sẽ không hiển thị trong kênh và bạn sẽ được thông báo về các chủ đề bạn đang theo dõi trong chế độ xem \"Chủ đề\".",
     "invite.send_error": "Đã xảy ra lỗi khi cố gắng gửi lời mời. Vui lòng kiểm tra kết nối mạng của bạn và thử lại.",
     "notification_settings.mentions.keywordsLabel": "Từ khóa không phân biệt chữ hoa chữ thường. Tách các từ khóa bằng dấu phẩy.",
-    "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
+    "settings.about.copyright": "Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved",
     "notification_settings.mentions.sensitiveName": "Tên phân biệt chữ hoa chữ thường của bạn",
     "invite.summary.some_not_sent": "{notSentCount, plural, one {lời mời} other {lời mời}} đã không được gửi",
     "notification_settings.mobile.trigger_push": "Kích hoạt thông báo đẩy khi...",

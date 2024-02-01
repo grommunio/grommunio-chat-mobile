@@ -427,7 +427,7 @@
     "settings.about.licensed": "ライセンス: {company}",
     "settings.about.database.schema": "データベーススキーマのバージョン:",
     "settings.about.database": "データベース:",
-    "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
+    "settings.about.copyright": "Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved",
     "settings.about.build": "{version} (Build {number})",
     "settings.about": "{appTitle}について",
     "settings_display.timezone.select": "タイムゾーンを選択",

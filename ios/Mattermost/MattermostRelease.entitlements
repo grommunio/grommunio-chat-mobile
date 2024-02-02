@@ -20,11 +20,11 @@
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.grommunio.com.chat</string>
+		<string>group.com.grommunio.chat</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)grommunio.com.chat</string>
+		<string>$(AppIdentifierPrefix)com.grommunio.chat</string>
 	</array>
 </dict>
 </plist>

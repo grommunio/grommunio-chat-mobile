@@ -938,7 +938,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grommunio.chat;
 				PRODUCT_NAME = grommuniochat;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -980,7 +980,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grommunio.chat;
 				PRODUCT_NAME = grommuniochat;
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1025,7 +1025,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.Share;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grommunio.chat.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1070,7 +1070,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.Share;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grommunio.chat.Share;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "grommuniochatShare/grommuniochatShare-Bridging-Header.h";
@@ -1113,7 +1113,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grommunio.chat.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -1156,7 +1156,7 @@
 					"$(inherited)",
 					"-DFB_SONARKIT_ENABLED=1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = grommunio.com.chat.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grommunio.chat.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

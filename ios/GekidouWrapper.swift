@@ -1,6 +1,5 @@
 //
 //  GekidouWrapper.swift
-//  Mattermost
 //
 //  Created by Elias Nahum on 06-04-22.
 //  Copyright © 2022 Facebook. All rights reserved.

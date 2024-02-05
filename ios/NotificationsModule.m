@@ -1,5 +1,5 @@
 
-#import "Mattermost-Swift.h"
+#import "grommunioChat-Swift.h"
 #import "NotificationsModule.h"
 
 @implementation NotificationsModule

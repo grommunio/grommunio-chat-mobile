@@ -18,7 +18,7 @@
                BlueprintIdentifier = "7F581D31221ED5C60099E66B"
                BuildableName = "NotificationService.appex"
                BlueprintName = "NotificationService"
-               ReferencedContainer = "container:Mattermost.xcodeproj">
+               ReferencedContainer = "container:grommunioChat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,25 +28,24 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7F581D31221ED5C60099E66B"
             BuildableName = "NotificationService.appex"
             BlueprintName = "NotificationService"
-            ReferencedContainer = "container:Mattermost.xcodeproj">
+            ReferencedContainer = "container:grommunioChat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = ""
       selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
+      askForAppToLaunch = "Yes"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
@@ -67,7 +66,7 @@
             BlueprintIdentifier = "7F581D31221ED5C60099E66B"
             BuildableName = "NotificationService.appex"
             BlueprintName = "NotificationService"
-            ReferencedContainer = "container:Mattermost.xcodeproj">
+            ReferencedContainer = "container:grommunioChat.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "SplashBackground.png",
+      "filename" : "SplashBackgroundDark.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "SplashBackground@2x.png",
+      "filename" : "SplashBackgroundDark@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

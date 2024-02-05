@@ -10,7 +10,7 @@
 #import <UserNotifications/UserNotifications.h>
 #import <RNHWKeyboardEvent.h>
 
-#import "Mattermost-Swift.h"
+#import "grommunioChat-Swift.h"
 #import <os/log.h>
 
 @implementation AppDelegate

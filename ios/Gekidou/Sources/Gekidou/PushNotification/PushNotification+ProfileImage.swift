@@ -14,7 +14,7 @@ extension PushNotification {
                 } else {
                     os_log(
                         OSLogType.default,
-                        "Mattermost Notifications: Request for profile image failed with status %{public}@ and error %{public}@",
+                        "grommunioChat Notifications: Request for profile image failed with status %{public}@ and error %{public}@",
                         String(statusCode),
                         errorMessage
                     )
@@ -31,11 +31,11 @@ extension PushNotification {
                 updatedAt = lastUpdateAt
             }
             if let image = ImageCache.default.image(for: senderId, updatedAt: updatedAt, forServer: serverUrl) {
-                os_log(OSLogType.default, "Mattermost Notifications: cached image")
+                os_log(OSLogType.default, "grommunioChat Notifications: cached image")
                 completionHandler(image)
             } else {
                 ImageCache.default.removeImage(for: senderId, forServer: serverUrl)
-                os_log(OSLogType.default, "Mattermost Notifications: image not cached")
+                os_log(OSLogType.default, "grommunioChattermost/ Notifications: image not cached")
                 Network.default.fetchUserProfilePicture(
                     userId: senderId, lastUpdateAt: updatedAt,
                     forServerUrl: serverUrl, completionHandler: processResponse

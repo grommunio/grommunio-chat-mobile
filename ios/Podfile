@@ -20,8 +20,8 @@ if linkage != nil
   use_frameworks! :linkage => linkage.to_sym
 end
 
-target 'Mattermost' do
-  # Pods for Mattermost
+target 'grommunioChat' do
+  # Pods for grommunioChat
 
   config = use_native_modules!
 

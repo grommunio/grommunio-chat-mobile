@@ -8,7 +8,7 @@
 
 #import "MattermostManaged.h"
 #import "CreateThumbnail.h"
-#import "Mattermost-Swift.h"
+#import "grommunioChat-Swift.h"
 
 @implementation MattermostManaged
 

@@ -323,7 +323,7 @@ function generateTitle() {
     const lane = `${platform} Build`;
     const appExtension = IOS === 'true' ? 'ipa' : 'apk';
     const appFileName = `Mattermost_Beta.${appExtension}`;
-    const appBuildType = 'mattermost-mobile-beta';
+    const appBuildType = 'grommunio-chat';
     const s3Folder = `${platform.toLocaleLowerCase()}/${BUILD_ID}-${COMMIT_HASH}-${BRANCH}`.replace(/\./g, '-');
     const appFilePath = IOS === 'true' ? 'Mattermost-simulator-x86_64.app.zip' : 'android/app/build/outputs/apk/release/app-release.apk';
     let buildLink = '';

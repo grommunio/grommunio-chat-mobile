@@ -1,9 +1,9 @@
 {
-  "name": "mattermost-mobile",
+  "name": "grommunio-chat",
   "version": "2.7.0",
   "description": "Mattermost Mobile with React Native",
   "repository": "git@github.com:mattermost/mattermost-mobile.git",
-  "author": "Mattermost, Inc.",
+  "author": "Grommunio, Inc.",
   "license": "Apache 2.0",
   "private": true,
   "dependencies": {

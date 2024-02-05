@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/stefanakie/Code/mattermost-mobile-2.7.0/ios/grommunioChat.xcodeproj">
+      location = "group:grommunioChat.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:grommunioChat.xcodeproj">
    </FileRef>
 </Workspace>

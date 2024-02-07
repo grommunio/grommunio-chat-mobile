@@ -77,10 +77,10 @@ describe('Account - Settings - About', () => {
         }
         await expect(AboutScreen.learnMoreText).toHaveText('Learn more about Enterprise Edition at ');
         await expect(AboutScreen.learnMoreUrl).toBeVisible();
-        await expect(AboutScreen.copyright).toHaveText(`Copyright 2015-${new Date().getFullYear()} Mattermost, Inc. All rights reserved`);
+        await expect(AboutScreen.copyright).toHaveText(`Copyright 2015-${new Date().getFullYear()} grommunio-chat, Inc. All rights reserved`);
         await expect(AboutScreen.termsOfService).toHaveText('Terms of Service');
         await expect(AboutScreen.privacyPolicy).toHaveText('Privacy Policy');
-        await expect(AboutScreen.noticeText).toHaveText('Mattermost is made possible by the open source software used in our server and mobile apps.');
+        await expect(AboutScreen.noticeText).toHaveText('grommunio-chat is made possible by the open source software used in our server and mobile apps.');
         await waitFor(AboutScreen.buildDateValue).toBeVisible().whileElement(by.id(AboutScreen.testID.scrollView)).scroll(50, 'down');
         await expect(AboutScreen.buildHashTitle).toHaveText('Build Hash:');
         await expect(AboutScreen.buildHashValue).toBeVisible();

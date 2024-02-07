@@ -4,7 +4,7 @@
     "TestServerUrl": "http://localhost:8065",
     "AutoSelectServerUrl": false,
 
-    "WebsiteURL": "https://mattermost.com",
+    "WebsiteURL": "https://grommunio.com",
     "ServerNoticeURL": "https://github.com/mattermost/mattermost-server/blob/master/NOTICE.txt",
     "MobileNoticeURL": "https://github.com/mattermost/mattermost-mobile/blob/master/NOTICE.txt",
 

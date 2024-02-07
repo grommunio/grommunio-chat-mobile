@@ -228,7 +228,7 @@ function unsupportedServerAdminAlert(serverDisplayName: string, intl: IntlShape,
         text: intl.formatMessage({id: 'server_upgrade.learn_more', defaultMessage: 'Learn More'}),
         style: 'cancel',
         onPress: () => {
-            const url = 'https://docs.mattermost.com/administration/release-lifecycle.html';
+            const url = 'https://grommunio.com/';
             const onError = () => {
                 Alert.alert(
                     intl.formatMessage({id: 'mobile.link.error.title', defaultMessage: 'Error'}),

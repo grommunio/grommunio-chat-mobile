@@ -1,1 +1,1 @@
-# grommunio-chat Mobile App
+# grommunio chat app v2.7

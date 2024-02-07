@@ -170,7 +170,7 @@ const About = ({componentId, config, license}: AboutProps) => {
             return version;
         }
 
-        return intl.formatMessage({id: 'settings.about.server.version.value', defaultMessage: '{version} (Build {buildNumber})'}, {version, buildNumber});
+        return intl.formatMessage({id: 'settings.about.server.version.value', defaultMessage: '{version} (Build {number})'}, {version, number: buildNumber});
     }, [config, intl]);
 
     const close = useCallback(() => {
@@ -184,7 +184,7 @@ const About = ({componentId, config, license}: AboutProps) => {
             const appVersion = intl.formatMessage({id: 'settings.about.app.version', defaultMessage: 'App Version: {version} (Build {number})'}, {version: DeviceInfo.getVersion(), number: DeviceInfo.getBuildNumber()});
             const buildNumber = config.BuildNumber;
             const version = config.Version;
-            const server = buildNumber === version ? intl.formatMessage({id: 'settings.about.server.version.noBuild', defaultMessage: 'Server Version: {version}'}, {version}) : intl.formatMessage({id: 'settings.about.server.version', defaultMessage: 'Server Version: {version} (Build {buildNumber})'}, {version, buildNumber});
+            const server = buildNumber === version ? intl.formatMessage({id: 'settings.about.server.version.noBuild', defaultMessage: 'Server Version: {version}'}, {version}) : intl.formatMessage({id: 'settings.about.server.version', defaultMessage: 'Server Version: {version} (Build {number})'}, {version, number: buildNumber});
             const database = intl.formatMessage({id: 'settings.about.database', defaultMessage: 'Database: {driverName}'}, {driverName: config.SQLDriverName});
             const databaseSchemaVersion = intl.formatMessage({id: 'settings.about.database.schema', defaultMessage: 'Database Schema Version: {version}'}, {version: config.SchemaVersion});
             const copiedString = `${appVersion}\n${server}\n${database}\n${databaseSchemaVersion}`;
@@ -307,7 +307,7 @@ const About = ({componentId, config, license}: AboutProps) => {
                     style={styles.thinLine}
                 />
                 <FormattedText
-                    defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved'
+                    defaultMessage='Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved.'
                     id={t('settings.about.copyright')}
                     style={[styles.footerText, styles.copyrightText]}
                     testID='about.copyright'
@@ -323,7 +323,7 @@ const About = ({componentId, config, license}: AboutProps) => {
                 <View style={styles.noticeContainer}>
                     <FormattedText
                         id={t('settings.notice_text')}
-                        defaultMessage='Mattermost is made possible by the open source software used in our {platform} and {mobile}.'
+                        defaultMessage='grommunio-chat is made possible by the open source software used in our {platform} and {mobile}.'
                         style={styles.footerText}
                         values={{
                             platform: (

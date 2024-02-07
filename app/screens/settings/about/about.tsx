@@ -306,8 +306,14 @@ const About = ({componentId, config, license}: AboutProps) => {
                 <View
                     style={styles.thinLine}
                 />
+                 <FormattedText
+                    defaultMessage='grommunio-chat is powered by Mattermost.'
+                    id={t('settings.about.powered')}
+                    style={[styles.footerText, styles.copyrightText]}
+                    testID='about.copyright'
+                />
                 <FormattedText
-                    defaultMessage='Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved.'
+                    defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved.'
                     id={t('settings.about.copyright')}
                     style={[styles.footerText, styles.copyrightText]}
                     testID='about.copyright'

@@ -17,6 +17,7 @@ export const convertToNotificationData = (notification: Notification, tapped = t
     }
 
     const {payload} = notification;
+    console.log(payload.identifier || notification.identifier);
     const notificationData: NotificationWithData = {
         ...notification,
         payload: {

@@ -100,7 +100,7 @@ android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdkVersion rootProject.ext.compileSdkVersion
-    namespace "com.grommunio.rnbeta"
+    namespace "com.grommunio.chat"
 
     lintOptions {
         checkReleaseBuilds false

@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.grommunio.com.chat</string>
+		<string>iCloud.com.grommunio.chat</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
@@ -14,7 +14,7 @@
 	</array>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
-		<string>iCloud.grommunio.com.chat</string>
+		<string>iCloud.com.grommunio.chat</string>
 	</array>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
@@ -22,11 +22,11 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.grommunio.com.chat</string>
+		<string>group.com.grommunio.chat</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)grommunio.com</string>
+		<string>$(AppIdentifierPrefix)com.grommunio.chat</string>
 	</array>
 </dict>
 </plist>

@@ -51,7 +51,7 @@ export REPLACE_ASSETS=false
 
 ############ APP IDENTIFIERS ############
 export MAIN_APP_IDENTIFIER=com.grommunio.chat
-export EXTENSION_APP_IDENTIFIER=com.grommunio.chat.MattermostShare
+export EXTENSION_APP_IDENTIFIER=com.grommunio.chat.Share
 export NOTIFICATION_SERVICE_IDENTIFIER=com.grommunio.chat.NotificationService
 export IOS_APP_GROUP=group.com.grommunio.chat
 export IOS_ICLOUD_CONTAINER=iCloud.com.grommunio.chat

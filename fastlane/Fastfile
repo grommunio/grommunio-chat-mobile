@@ -444,7 +444,7 @@ platform :ios do
     )
 
     # Set the share extension bundle identifier
-    extension_bundle_id = ENV['EXTENSION_APP_IDENTIFIER'] || 'com.grommunio.chat.MattermostShare'
+    extension_bundle_id = ENV['EXTENSION_APP_IDENTIFIER'] || 'com.grommunio.chat.Share'
     update_app_identifier(
         xcodeproj: './ios/Mattermost.xcodeproj',
         plist_path: 'MattermostShare/Info.plist',
@@ -478,7 +478,7 @@ platform :ios do
         xcodeproj: './ios/Mattermost.xcodeproj',
         plist_path: 'Mattermost/Info.plist',
         block: proc do |plist|
-          urlScheme = plist["CFBundleURLTypes"].find{|scheme| scheme["CFBundleURLName"] == "com.mattermost"}
+          urlScheme = plist["CFBundleURLTypes"].find{|scheme| scheme["CFBundleURLName"] == "com.grommunio"}
           urlScheme[:CFBundleURLSchemes] = [app_scheme, app_auth_scheme]
         end
     )

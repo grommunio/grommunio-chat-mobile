@@ -31,7 +31,7 @@ import TosPrivacyContainer from './tos_privacy';
 
 import type {AvailableScreens} from '@typings/screens/navigation';
 
-const MATTERMOST_BUNDLE_IDS = ['com.grommunio.rnbeta', 'com.grommunio.rn'];
+const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat'];
 
 const logo = require('@assets/images/grommunio_favicon-triangle_light_512.png');
 

@@ -1,0 +1,69 @@
+{
+  "testRunner": {
+    "$0": "jest",
+    "args": {
+      "config": "e2e/config.js"
+    }
+  },
+  "apps": {
+    "ios.debug": {
+      "type": "ios.app",
+      "binaryPath": "../ios/Build/Products/Debug-iphonesimulator/Mattermost.app"
+    },
+    "ios.release": {
+      "type": "ios.app",
+      "binaryPath": "../ios/Build/Products/Release-iphonesimulator/Mattermost.app",
+      "build": "cd .. && npm run build:ios-sim && cd detox"
+    },
+    "android.debug": {
+      "type": "android.apk",
+      "binaryPath": "../android/app/build/outputs/apk/debug/app-debug.apk",
+      "build": "cd .. && ./node_modules/.bin/jetify && cd android && ./gradlew clean && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ../detox"
+    },
+    "android.release": {
+      "type": "android.apk",
+      "binaryPath": "../android/app/build/outputs/apk/release/app-release.apk",
+      "build": "cd .. && ./node_modules/.bin/jetify && cd android && ./gradlew clean && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ../detox"
+    }
+  },
+  "devices": {
+    "ios.simulator": {
+      "type": "ios.simulator",
+      "device": {
+        "type": "iPhone 14"
+      }
+    },
+    "android.emulator": {
+      "type": "android.emulator",
+      "device": {
+        "avdName": "detox_pixel_4_xl_api_31"
+      }
+    }
+  },
+  "configurations": {
+    "ios.sim.debug": {
+      "device": "ios.simulator",
+      "app": "ios.debug"
+    },
+    "ios.sim.release": {
+      "device": "ios.simulator",
+      "app": "ios.release"
+    },
+    "android.emu.debug": {
+      "device": "android.emulator",
+      "app": "android.debug"
+    },
+    "android.emu.release": {
+      "device": "android.emulator",
+      "app": "android.release"
+    }
+  },
+  "artifacts": {
+    "pathBuilder": "./e2e/path_builder.js"
+  },
+  "behavior": {
+    "init": {
+      "launchApp": false
+    }
+  }
+}

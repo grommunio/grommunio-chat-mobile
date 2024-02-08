@@ -36,8 +36,8 @@ setup_permissions([
   "PhotoLibrary"
 ])
 
-target 'Mattermost' do
-  # Pods for Mattermost
+target 'grommunioChat' do
+  # Pods for grommunioChat
 
   config = use_native_modules!
 

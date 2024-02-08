@@ -2,6 +2,6 @@
 // See LICENSE.txt for license information.
 
 export default {
-    TERMS_OF_SERVICE: 'https://grommunio.com/',
-    PRIVACY_POLICY: 'https:/grommunio.com/',
+    TERMS_OF_SERVICE: 'https://mattermost.com/terms-of-use/',
+    PRIVACY_POLICY: 'https://mattermost.com/privacy-policy/',
 };

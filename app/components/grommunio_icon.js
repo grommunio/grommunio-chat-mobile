@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {View, Image} from 'react-native';
 
-import Icon from '@assets/images/grommunio_favicon-triangle_light_512.png';
+import Icon from '@assets/images/grommunioChat_512.png';
 
 const GrommunioIcon = ({style}) => (
     <View>

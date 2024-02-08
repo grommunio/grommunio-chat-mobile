@@ -33,7 +33,7 @@ import type {AvailableScreens} from '@typings/screens/navigation';
 
 const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat'];
 
-const logo = require('@assets/images/grommunio_favicon-triangle_light_512.png');
+const logo = require('@assets/images/grommunioChat_512.png');
 
 const getStyleSheet = makeStyleSheetFromTheme((theme) => {
     return {

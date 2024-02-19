@@ -1,7 +1,7 @@
 {
   "about.date": "วันที่สร้าง:",
   "about.enterpriseEditionLearn": "เรียนรู้เกี่ยวกับ Enterprise Edition ที่ : ",
-  "about.teamEditionLearn": "เข้าร่วมกับ Mattermost Community ที่ ",
+  "about.teamEditionLearn": "เข้าร่วมกับ grommunio chat Community ที่ ",
   "last_users_message.added_to_channel.type": "ถูก **เพิ่มเข้าห้อง** โดย [actor]",
   "last_users_message.added_to_team.type": "ถูก **เพิ่มเข้าห้อง** โดย [actor].",
   "last_users_message.first": "{ผู้ใช้คนแรก} และ ",

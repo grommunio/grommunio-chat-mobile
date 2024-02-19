@@ -4,7 +4,7 @@
  * <p>This source code is licensed under the MIT license found in the LICENSE file in the root
  * directory of this source tree.
  */
-package com.mattermost.flipper;
+package com.grommunio.flipper;
 
 import android.content.Context;
 import com.facebook.react.ReactInstanceManager;

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroupIdentifier</key>
-	<string>group.com.mattermost.rnbeta</string>
+	<string>group.com.grommunio.chat</string>
 	<key>BundleEntryFilename</key>
 	<string>index.js</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mattermost.rnbeta</string>
+	<string>com.grommunio.chat</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,7 +28,7 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.mattermost</string>
+			<string>com.grommunio</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>mattermost</string>

@@ -4,12 +4,11 @@
 import Clipboard from '@react-native-clipboard/clipboard';
 import React, {useCallback, useMemo} from 'react';
 import {useIntl} from 'react-intl';
-import {Alert, Text, View} from 'react-native';
+import {Alert, Text, View, Image} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
 import Config from '@assets/config.json';
 import Button from '@components/button';
-import CompassIcon from '@components/compass_icon';
 import FormattedText from '@components/formatted_text';
 import SettingContainer from '@components/settings/container';
 import AboutLinks from '@constants/about_links';
@@ -32,7 +31,9 @@ import TosPrivacyContainer from './tos_privacy';
 
 import type {AvailableScreens} from '@typings/screens/navigation';
 
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
+const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat'];
+
+const logo = require('@assets/images/logo.png');
 
 const getStyleSheet = makeStyleSheetFromTheme((theme) => {
     return {
@@ -106,6 +107,10 @@ const getStyleSheet = makeStyleSheetFromTheme((theme) => {
             backgroundColor: changeOpacity(theme.centerChannelColor, 0.2),
             alignSelf: 'stretch',
             marginVertical: 20,
+        },
+        logo: {
+            width: 200,
+            height: 200,
         },
     };
 });
@@ -192,11 +197,9 @@ const About = ({componentId, config, license}: AboutProps) => {
     return (
         <SettingContainer testID='about'>
             <View style={styles.logoContainer}>
-                <CompassIcon
-                    color={theme.centerChannelColor}
-                    name='mattermost'
-                    size={88}
-                    testID='about.logo'
+                <Image
+                    source={logo}
+                    style={styles.logo}
                 />
                 <Title
                     config={config}
@@ -292,20 +295,20 @@ const About = ({componentId, config, license}: AboutProps) => {
                     config={config}
                     onPress={handleAboutTeam}
                 />
-                {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
-                    <FormattedText
-                        defaultMessage='{site} is powered by Mattermost'
-                        id={t('settings.about.powered_by')}
-                        style={styles.footerText}
-                        testID='about.powered_by'
-                        values={{site: config.SiteName}}
-                    />
-                }
                 <View
                     style={styles.thinLine}
                 />
+                {!MATTERMOST_BUNDLE_IDS.includes(DeviceInfo.getBundleId()) &&
                 <FormattedText
-                    defaultMessage='Copyright 2015-{currentYear} grommunio-chat, Inc. All rights reserved.'
+                    defaultMessage='{site} is powered by Mattermost'
+                    id={t('settings.about.powered_by')}
+                    style={styles.footerText}
+                    testID='about.powered_by'
+                    values={{site: config.SiteName}}
+                />
+                }
+                <FormattedText
+                    defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved.'
                     id={t('settings.about.copyright')}
                     style={[styles.footerText, styles.copyrightText]}
                     testID='about.copyright'

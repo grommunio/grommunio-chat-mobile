@@ -17,7 +17,7 @@
     "api.channel.add_member.added": "{addedUsername} беше приклучен на каналот од {username}.",
     "api.channel.add_guest.added": "{addedUsername} беше приклучен на каналот како гостин од {username}.",
     "about.teamEditionSt": "Целата тимска комуникација на едно место, инстанто пребарување и достапност насекаде.",
-    "about.teamEditionLearn": "Придружи се на grommunio chat заедницата на ",
+    "about.teamEditionLearn": "Придружи се на Mattermost заедницата на ",
     "about.hashee": "Хеш на Пр. Градба:",
     "api.channel.guest_join_channel.post_and_forget": "{username} се приклучи на каналот како гостин.",
     "about.enterpriseEditionSt": "Модерна комуникација позади вашиот заштитен ѕид.",

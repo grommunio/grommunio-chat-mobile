@@ -944,7 +944,7 @@
   "settings.about.database.title": "Veri tabanı:",
   "settings.about.licensed": "Lisans sahibi: {company}",
   "settings.about.powered_by": "{site} sitesi Mattermost tarafından sunulmaktadır",
-  "settings.about.server.version": "Sunucu sürümü: {version} (Yapım {buildNumber}",
+  "settings.about.server.version": "Sunucu sürümü: {version} (Yapım {number}",
   "settings.about.server.version.noBuild": "Sunucu sürümü: {version}",
   "settings.about.server.version.title": "Sunucu sürümü:",
   "settings.about.server.version.value": "{version} (Yapım {number})",

@@ -961,7 +961,7 @@
   "settings.about.database.title": "Databas:",
   "settings.about.licensed": "Licensierad till: {company}",
   "settings.about.powered_by": "{site} funkar med hjälp av Mattermost",
-  "settings.about.server.version": "Serverversion: {version} (Build {buildNumber}",
+  "settings.about.server.version": "Serverversion: {version} (Build {number}",
   "settings.about.server.version.noBuild": "Serverversion: {version}",
   "settings.about.server.version.title": "Serverversion:",
   "settings.about.server.version.value": "{version} (Build {number})",

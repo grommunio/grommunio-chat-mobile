@@ -932,7 +932,7 @@
   "settings.about.database.title": "Cơ sở dữ liệu:",
   "settings.about.licensed": "Giấy phép được cấp: {company}",
   "settings.about.powered_by": "{site} được cung cấp bởi Mattermost",
-  "settings.about.server.version": "Phiên bản Máy chủ: {version} (Số bản tạo {buildNumber}",
+  "settings.about.server.version": "Phiên bản Máy chủ: {version} (Số bản tạo {number}",
   "settings.about.server.version.noBuild": "Phiên bản Máy chủ: {version}",
   "settings.about.server.version.title": "Phiên bản Máy chủ:",
   "settings.about.server.version.value": "{version} (Bản {number})",

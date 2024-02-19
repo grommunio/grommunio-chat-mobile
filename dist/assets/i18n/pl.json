@@ -961,7 +961,7 @@
   "settings.about.database.title": "Baza danych:",
   "settings.about.licensed": "Licencjonowany dla: {company}",
   "settings.about.powered_by": "{site} jest wspierane przez Mattermost",
-  "settings.about.server.version": "Wersja serwera: {version} (kompilacja {buildNumber}",
+  "settings.about.server.version": "Wersja serwera: {version} (kompilacja {number}",
   "settings.about.server.version.noBuild": "Wersja Serwera: {version}",
   "settings.about.server.version.title": "Wersja serwera:",
   "settings.about.server.version.value": "{version} (Build {number})",

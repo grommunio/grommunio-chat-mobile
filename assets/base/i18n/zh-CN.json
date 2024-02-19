@@ -961,7 +961,7 @@
   "settings.about.database.title": "数据库：",
   "settings.about.licensed": "许可给：{company}",
   "settings.about.powered_by": "{site}由Mattermost支持",
-  "settings.about.server.version": "服务器版本：{version}（构建版本{buildNumber}）",
+  "settings.about.server.version": "服务器版本：{version}（构建版本{number}）",
   "settings.about.server.version.noBuild": "服务器版本：{version}",
   "settings.about.server.version.title": "服务器版本：",
   "settings.about.server.version.value": "{version} (构建 {number})",

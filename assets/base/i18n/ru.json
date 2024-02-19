@@ -961,7 +961,7 @@
   "settings.about.database.title": "База данных:",
   "settings.about.licensed": "Лицензировано для: {company}",
   "settings.about.powered_by": "{site} работает на Mattermost",
-  "settings.about.server.version": "Версия сервера: {version} (Build {buildNumber}",
+  "settings.about.server.version": "Версия сервера: {version} (Build {number}",
   "settings.about.server.version.noBuild": "Версия сервера: {version}",
   "settings.about.server.version.title": "Версия сервера:",
   "settings.about.server.version.value": "{version} (Сборка {number})",

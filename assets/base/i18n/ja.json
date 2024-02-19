@@ -961,7 +961,7 @@
   "settings.about.database.title": "データベース:",
   "settings.about.licensed": "ライセンス: {company}",
   "settings.about.powered_by": "{site} はMattermostを利用しています",
-  "settings.about.server.version": "サーバーのバージョン: {version} (Build {buildNumber})",
+  "settings.about.server.version": "サーバーのバージョン: {version} (Build {number})",
   "settings.about.server.version.noBuild": "サーバーのバージョン: {version}",
   "settings.about.server.version.title": "サーバーのバージョン:",
   "settings.about.server.version.value": "{version} (Build {number})",

@@ -423,7 +423,7 @@
   "settings.about": "O programu {appTitle}",
   "settings.about.database": "Baza podataka: {driverName}",
   "settings.about.database.title": "Baza podataka:",
-  "settings.about.server.version": "Verzija servera: {version} (izgradnja {buildNumber}",
+  "settings.about.server.version": "Verzija servera: {version} (izgradnja {number}",
   "settings.about.server.version.noBuild": "Verzija servera: {version}",
   "settings.about.server.version.title": "Verzija servera:",
   "settings.about.server.version.value": "{version} (izgradnja {number})",

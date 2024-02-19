@@ -954,7 +954,7 @@
   "settings.about.app.version.title": "应用程序版本：",
   "settings.about.app.version.value": "{version}（构建号{number}）",
   "settings.about.button.copyInfo": "复制信息",
-  "settings.about.copyright": "Copyright 2015-{currentYear} grommunio chat, Inc. All rights reserved",
+  "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
   "settings.about.database": "数据库：{driverName}",
   "settings.about.database.schema": "数据库Schema版本：{version}",
   "settings.about.database.schema.title": "数据库 Schema 版本：",

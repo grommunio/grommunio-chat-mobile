@@ -937,7 +937,7 @@
   "settings.about.app.version.title": "Uygulama sürümü:",
   "settings.about.app.version.value": "{version} (Yapım {number})",
   "settings.about.button.copyInfo": "Bilgileri kopyala",
-  "settings.about.copyright": "Telif Hakkı 2015-{currentYear} grommunio chat, Inc. Tüm hakları saklıdır",
+  "settings.about.copyright": "Telif Hakkı 2015-{currentYear} Mattermost, Inc. Tüm hakları saklıdır",
   "settings.about.database": "Veri tabanı: {driverName}",
   "settings.about.database.schema": "Veri tabanı şeması sürümü: {version}",
   "settings.about.database.schema.title": "Vveri tabanı şeması sürümü:",

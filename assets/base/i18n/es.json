@@ -849,7 +849,7 @@
   "servers.logout": "Cerrar sesión",
   "servers.remove": "Eliminar",
   "settings.about": "Acerca de {appTitle}",
-  "settings.about.copyright": "Derechos de autor 2015-{currentYear} grommunio chat, Inc. Todos los derechos reservados",
+  "settings.about.copyright": "Derechos de autor 2015-{currentYear} Mattermost, Inc. Todos los derechos reservados",
   "settings.about.database": "Base de datos:",
   "settings.about.database.schema": "Versión del esquema de Base de Datos:",
   "settings.about.licensed": "Con licencia para: {company}",

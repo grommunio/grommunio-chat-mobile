@@ -925,7 +925,7 @@
   "settings.about.app.version.title": "Phiên bản:",
   "settings.about.app.version.value": "{version} (Số bản tạo {number})",
   "settings.about.button.copyInfo": "Thông tin sao chép",
-  "settings.about.copyright": "Copyright 2015-{currentYear} grommunio chat, Inc. All rights reserved",
+  "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved",
   "settings.about.database": "Cơ sở dữ liệu: {driverName}",
   "settings.about.database.schema": "Phiên Bản Lược Đồ CSDL: {version}",
   "settings.about.database.schema.title": "Phiên Bản Lược Đồ CSDL:",

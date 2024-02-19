@@ -930,7 +930,7 @@
   "settings.about.app.version.title": "Version de l'application :",
   "settings.about.app.version.value": "{version} (Build {number})",
   "settings.about.button.copyInfo": "Copier les infos",
-  "settings.about.copyright": "Copyright 2015-{currentYear} grommunio chat, Inc. Tous droits réservés",
+  "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. Tous droits réservés",
   "settings.about.database": "Base de données : {driverName}",
   "settings.about.database.schema": "Version du schéma de base de données : {version}",
   "settings.about.database.schema.title": "Version du schéma de base de données :",

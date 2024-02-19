@@ -954,7 +954,7 @@
   "settings.about.app.version.title": "Wersja aplikacji:",
   "settings.about.app.version.value": "{version} (Build {number})",
   "settings.about.button.copyInfo": "Kopiuj informacje",
-  "settings.about.copyright": "Copyright 2015-{currentYear} grommunio chat, Inc. Wszelkie prawa zastrzeżone",
+  "settings.about.copyright": "Copyright 2015-{currentYear} Mattermost, Inc. Wszelkie prawa zastrzeżone",
   "settings.about.database": "Baza danych: {driverName}",
   "settings.about.database.schema": "Wersja schematu bazy danych: {version}",
   "settings.about.database.schema.title": "Wersja Schematu Bazy Danych:",

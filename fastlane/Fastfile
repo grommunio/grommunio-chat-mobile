@@ -50,7 +50,7 @@ after_all do |lane|
     if ENV['RESET_GIT_BRANCH'] == 'true'
       branch = ENV['BRANCH_TO_BUILD'] || 'main'
       package_id = ENV['MAIN_APP_IDENTIFIER'] || 'com.grommunio.chat'
-      beta_dir = '../android/app/src/main/java/com/mattermost/rnbeta'
+      beta_dir = '../android/app/src/main/java/com/grommunio/chat'
       release_dir = "../android/app/src/main/java/#{package_id.gsub '.', '/'}"
 
       if beta_dir != release_dir
@@ -382,7 +382,7 @@ platform :ios do
   lane :unsigned do
     UI.success('Building unsigned iOS app')
 
-    ENV['APP_NAME'] = 'Mattermost'
+    ENV['APP_NAME'] = 'grommunio chat'
     ENV['REPLACE_ASSETS'] = 'true'
     ENV['BUILD_FOR_RELEASE'] = 'true'
     ENV['APP_SCHEME'] = 'mattermost'
@@ -416,7 +416,7 @@ platform :ios do
 
   lane :update_identifiers do
     # Set the name for the app and share extension
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio chat'
     update_info_plist(
         xcodeproj: './ios/Mattermost.xcodeproj',
         plist_path: 'Mattermost/Info.plist',
@@ -453,7 +453,7 @@ platform :ios do
 
     find_replace_string(
         path_to_file: './ios/Mattermost.xcodeproj/project.pbxproj',
-        old_string: 'com.mattermost.rnbeta.MattermostShare',
+        old_string: 'com.mattermost.chat.Share',
         new_string: extension_bundle_id
     )
 
@@ -467,7 +467,7 @@ platform :ios do
 
     find_replace_string(
         path_to_file: './ios/Mattermost.xcodeproj/project.pbxproj',
-        old_string: 'com.mattermost.rnbeta',
+        old_string: 'com.grommunio.chat',
         new_string: app_bundle_id
     )
 
@@ -562,7 +562,7 @@ platform :ios do
       sh 'cp -R ../dist/assets/release/splash_screen/ios/SplashIcon.imageset ../ios/Mattermost/Images.xcassets/'
     end
 
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio chat'
     localization_base_path = '../dist/assets/i18n/'
     Dir.glob('*.json', base: localization_base_path) do |item|
       localization_file = File.read(localization_base_path + item)
@@ -623,11 +623,11 @@ platform :ios do
     )
 
     ENV['MATCH_APP_IDENTIFIER'].split(',').each do |id|
-      target = 'Mattermost'
+      target = 'grommunio'
       if id.include? 'NotificationService'
         target = 'NotificationService'
-      elsif id.include? 'MattermostShare'
-        target = 'MattermostShare'
+      elsif id.include? 'Share'
+        target = 'Share'
       end
 
       profile = "sigh_#{id}_#{ENV['MATCH_TYPE']}"
@@ -644,7 +644,7 @@ platform :ios do
   end
 
   def build_ios
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio chat'
     app_name_sub = app_name.gsub(" ", "_")
     config_mode = ENV['BUILD_FOR_RELEASE'] == 'true' ? 'Release' : 'Debug'
     method = ENV['IOS_BUILD_EXPORT_METHOD'].nil? || ENV['IOS_BUILD_EXPORT_METHOD'].empty? ? 'ad-hoc' : ENV['IOS_BUILD_EXPORT_METHOD']
@@ -675,7 +675,7 @@ platform :ios do
     root_dir = Dir[File.expand_path('..')].first
     ios_build_dir = "#{root_dir}/ios/Build/Products"
 
-    ENV['APP_NAME'] = 'Mattermost'
+    ENV['APP_NAME'] = 'grommunio chat'
     ENV['REPLACE_ASSETS'] = 'true'
     ENV['BUILD_FOR_RELEASE'] = 'true'
     ENV['APP_SCHEME'] = 'mattermost'
@@ -709,7 +709,7 @@ platform :android do
   lane :unsigned do
     UI.success('Building unsigned Android app')
 
-    ENV['APP_NAME'] = 'Mattermost'
+    ENV['APP_NAME'] = 'grommunio chat'
     ENV['REPLACE_ASSETS'] = 'true'
     ENV['BUILD_FOR_RELEASE'] = 'true'
     ENV['APP_SCHEME'] = 'mattermost'
@@ -728,7 +728,7 @@ platform :android do
 
   lane :update_identifiers do
     # Set the name for the app
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio chat'
     sh "echo '#{app_name}' > ../fastlane/metadata/android/en-US/title.txt"
     android_change_string_app_name(
         newName: app_name,
@@ -755,8 +755,8 @@ platform :android do
       )
     end
 
-    helpers_dir = './android/app/src/main/java/com/mattermost/helpers/'
-    beta_dir = './android/app/src/main/java/com/mattermost/rnbeta/'
+    helpers_dir = './android/app/src/main/java/com/grommunio/helpers/'
+    beta_dir = './android/app/src/main/java/com/grommunio/chat/'
     release_dir = "./android/app/src/main/java/#{package_id.gsub '.', '/'}/"
     if release_dir != beta_dir
       unless Dir.exist?(".#{release_dir}")
@@ -768,7 +768,7 @@ platform :android do
       Dir.glob(".#{release_dir}*.java") do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'package com.mattermost.rnbeta;',
+            old_string: 'package com.grommunio.chat;',
             new_string: "package #{package_id};"
         )
       end
@@ -776,31 +776,31 @@ platform :android do
       Dir.glob(".#{release_dir}*.kt") do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'package com.mattermost.rnbeta',
+            old_string: 'package com.grommunio.chat',
             new_string: "package #{package_id}"
         )
       end
 
-      Dir.glob('../android/app/src/main/java/com/mattermost/share/*.java') do |item|
+      Dir.glob('../android/app/src/main/java/com/grommunio/share/*.java') do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'import com.mattermost.rnbeta.MainApplication;',
+            old_string: 'import com.grommunio.chat.MainApplication;',
             new_string: "import #{package_id}.MainApplication;"
         )
       end
 
-      Dir.glob('../android/app/src/main/java/com/mattermost/helpers/*.java') do |item|
+      Dir.glob('../android/app/src/main/java/com/grommunio/helpers/*.java') do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'import com.mattermost.rnbeta.*;',
+            old_string: 'import com.grommunio.chat.*;',
             new_string: "import #{package_id}.*;"
         )
       end
 
-      Dir.glob('../android/app/src/main/java/com/mattermost/helpers/*.kt') do |item|
+      Dir.glob('../android/app/src/main/java/com/grommunio/helpers/*.kt') do |item|
         find_replace_string(
             path_to_file: item[1..-1],
-            old_string: 'import com.mattermost.rnbeta.*',
+            old_string: 'import com.grommunio.chat.*',
             new_string: "import #{package_id}.*"
         )
       end
@@ -869,7 +869,7 @@ platform :android do
   end
 
   def move_android_to_root
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio chat'
     app_name_sub = app_name.gsub(" ", "_")
     build_task = ENV['ANDROID_BUILD_TASK'].nil? || ENV['ANDROID_BUILD_TASK'].empty? ? 'assemble' : ENV['ANDROID_BUILD_TASK']
     build_task = build_task.split(",")

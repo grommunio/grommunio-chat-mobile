@@ -31,7 +31,7 @@ import TosPrivacyContainer from './tos_privacy';
 
 import type {AvailableScreens} from '@typings/screens/navigation';
 
-const MATTERMOST_BUNDLE_IDS = ['com.grommunio.chat'];
+const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rn', 'com.mattermost.rnbeta'];  // do not change it to com.grommunio.chat
 
 const logo = require('@assets/images/grommunioChat_512.png');
 
@@ -305,12 +305,6 @@ const About = ({componentId, config, license}: AboutProps) => {
                 }
                 <View
                     style={styles.thinLine}
-                />
-                 <FormattedText
-                    defaultMessage='grommunio-chat is powered by Mattermost.'
-                    id={t('settings.about.powered')}
-                    style={[styles.footerText, styles.copyrightText]}
-                    testID='about.copyright'
                 />
                 <FormattedText
                     defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved.'

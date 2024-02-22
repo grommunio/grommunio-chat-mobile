@@ -16,37 +16,45 @@
     ```
 - test if the app runs via `npm`: `npm run android` -> if not, look in the debug section
 
-### Debug build .apk
+### Build debug .apk
 
 - [Mattermost Guide](https://developers.mattermost.com/contribute/more-info/mobile/build-your-own/android/)
   - `npm run build:android`
-  - -> `./grommunio_chat.apk`
+  
+  -> `./grommunio_chat.apk`
 
 or
 
 - [Medium Guide](https://medium.com/geekculture/react-native-generate-apk-debug-and-release-apk-4e9981a2ea51)
-  - `react-native bundle --platform android --dev false --entry-file index.ts --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
+  - :warning: ignore the step (will produce [*Error: Duplicate resources*](#duplicate-resources)): `react-native bundle --platform android --dev false --entry-file index.ts --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
   - `cd android`
   - `./gradlew assembleDebug`
-  - -> `./android/app/build/outputs/apk/debug/app-debug.apk`
+  
+  -> `./android/app/build/outputs/apk/debug/app-debug.apk`
 
-### Release build .apk
+### Build release .apk
 
-- `react-native bundle --platform android --dev false --entry-file index.ts --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
 - `cd android`
 - `./gradlew assembleRelease`
-- -> `./android/app/build/outputs/apk/release/app-release.apk`
 
-- *Error: Duplicate resources* [Solution](#duplicate-resources)
+ -> `./android/app/build/outputs/apk/release/app-release.apk`
 
-### Release build bundle (for Google Play Store)
+<br/>
 
-- `react-native bundle --platform android --dev false --entry-file index.ts --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
+Related errors:
+- [*Error: Duplicate resources*](#duplicate-resources)
+
+### Build release bundle (for Google Play Store)
+
 - `cd android`
 - `./gradlew bundleRelease`
-- -> `./android/app/build/outputs/bundle/release/app-release.aab`
 
-- *Error: Duplicate resources* [Solution](#duplicate-resources)
+-> `./android/app/build/outputs/bundle/release/app-release.aab`
+
+<br/>
+
+Related errors:
+- [*Error: Duplicate resources*](#duplicate-resources)
   
 ## Debugging
 
@@ -63,6 +71,14 @@ or
 `rm -rf node_modules/` \
 `npm run clean` \
 `npm install` \
+
+### Problems
+
+#### Build does not contain newest changes
+- `cd android/`
+- `/gradlew clean`
+- build again
+
 
 ### Errors
 

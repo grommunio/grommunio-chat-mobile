@@ -16,7 +16,7 @@
     ```
 - test if the app runs via `npm`: `npm run android` -> if not, look in the debug section
 
-### Debug build
+### Debug build .apk
 
 - [Mattermost Guide](https://developers.mattermost.com/contribute/more-info/mobile/build-your-own/android/)
   - `npm run build:android`
@@ -30,15 +30,23 @@ or
   - `./gradlew assembleDebug`
   - -> `./android/app/build/outputs/apk/debug/app-debug.apk`
 
-### Release build
+### Release build .apk
 
 - `react-native bundle --platform android --dev false --entry-file index.ts --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
 - `cd android`
 - `./gradlew assembleRelease`
-- -> `./android/app/build/outputs/apk/debug/app-debug.apk`
+- -> `./android/app/build/outputs/apk/release/app-release.apk`
 
 - *Error: Duplicate resources* [Solution](#duplicate-resources)
 
+### Release build bundle (for Google Play Store)
+
+- `react-native bundle --platform android --dev false --entry-file index.ts --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res`
+- `cd android`
+- `./gradlew bundleRelease`
+- -> `./android/app/build/outputs/bundle/release/app-release.aab`
+
+- *Error: Duplicate resources* [Solution](#duplicate-resources)
   
 ## Debugging
 
@@ -69,6 +77,9 @@ or
 
 #### Duplicate resources
 > Error: Duplicate resources
+
+- commit important changes and then reset all changes made by the build process (`git add -A; git stash`)
+- try building again
 
 
 

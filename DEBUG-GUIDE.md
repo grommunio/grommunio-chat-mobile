@@ -4,7 +4,7 @@
 
 - normally run via Android Studio
 
-## Building the app
+## Build the app
 
 - get the keystore -> current keystore in `/Users/stefanakie/Desktop/grommunio-chat/Android/config-files/grommunio-keystore.keystore`
 - get the keystore pwd -> see `/Users/stefanakie/Desktop/grommunio-chat/Android/config-files/gradle.properties`
@@ -70,13 +70,13 @@ Related errors:
 
 `rm -rf node_modules/` \
 `npm run clean` \
-`npm install` \
+`npm install`
 
 ### Problems
 
 #### Build does not contain newest changes
 - `cd android/`
-- `/gradlew clean`
+- `./gradlew clean`
 - build again
 
 

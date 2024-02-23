@@ -4,7 +4,7 @@
 export BRANCH_TO_BUILD=master
 export GIT_LOCAL_BRANCH=build
 
-export APP_NAME="Mattermost Beta"
+export APP_NAME="grommunio chat"
 export APP_SCHEME=mattermost
 
 #export INCREMENT_BUILD_NUMBER=false
@@ -74,6 +74,6 @@ export SUBMIT_ANDROID_TO_GOOGLE_PLAY=false
 ############ UPLOAD THE BUILDS TO AWS S3 ############
 #export AWS_ACCESS_KEY_ID=<your aws s3 access id>
 #export AWS_SECRET_ACCESS_KEY=<your aws s3 access key>
-#export AWS_BUCKET_NAME=<your aws bucket name>
+#export AWS_BUCKET_NAME=releases.grommunio.com
 #export AWS_FOLDER_NAME=<the folder to use in you aws bucket>
 #export AWS_REGION=<your aws region>

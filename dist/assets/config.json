@@ -8,6 +8,12 @@
     "ServerNoticeURL": "https://github.com/mattermost/mattermost-server/blob/master/NOTICE.txt",
     "MobileNoticeURL": "https://github.com/mattermost/mattermost-mobile/blob/master/NOTICE.txt",
 
+    "ShowErrorsList": false,
+    "EELearnURL": "grommunio.com",
+    "TeamEditionLearnURL": "grommunio.com",
+    "AboutTeamURL": "https://grommunio.com/",
+    "AboutEnterpriseURL": "https://grommunio.com/",
+    "PlatformNoticeURL": "https://grommunio.com/",
     "RudderApiKey": "",
 
     "SentryEnabled": false,

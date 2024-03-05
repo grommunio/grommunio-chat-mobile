@@ -1,1 +1,1 @@
-# grommunio chat app v2.12.2-507
+# grommunio chat app v2.12.3-507

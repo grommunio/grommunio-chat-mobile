@@ -307,6 +307,13 @@ const About = ({componentId, config, license}: AboutProps) => {
                     style={styles.thinLine}
                 />
                 <FormattedText
+                    defaultMessage='Copyright 2020-{currentYear} grommunio GmbH. All rights reserved.'
+                    id={t('settings.about.copyright2')}
+                    style={[styles.footerText, styles.copyrightText]}
+                    testID='about.copyright2'
+                    values={{currentYear: new Date().getFullYear()}}
+                />
+                <FormattedText
                     defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved.'
                     id={t('settings.about.copyright')}
                     style={[styles.footerText, styles.copyrightText]}
@@ -320,13 +327,6 @@ const About = ({componentId, config, license}: AboutProps) => {
                         onPressTOS={handleTermsOfService}
                     />
                 </View>
-                <FormattedText
-                    defaultMessage='Copyright 2020-{currentYear} grommunio, Inc. All rights reserved.'
-                    id={t('settings.about.copyright2')}
-                    style={[styles.footerText, styles.copyrightText]}
-                    testID='about.copyright2'
-                    values={{currentYear: new Date().getFullYear()}}
-                />
                 <View style={styles.noticeContainer}>
                     <FormattedText
                         id={t('settings.notice_text')}

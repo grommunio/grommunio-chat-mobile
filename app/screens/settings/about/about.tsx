@@ -31,7 +31,7 @@ import TosPrivacyContainer from './tos_privacy';
 
 import type {AvailableScreens} from '@typings/screens/navigation';
 
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rn', 'com.mattermost.rnbeta'];  // do not change it to com.grommunio.chat
+const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rn', 'com.mattermost.rnbeta']; // do not change it to com.grommunio.chat
 
 const logo = require('@assets/images/logo.png');
 
@@ -308,6 +308,13 @@ const About = ({componentId, config, license}: AboutProps) => {
                 />
                 }
                 <FormattedText
+                    defaultMessage='Copyright 2020-{currentYear} grommunio GmbH. All rights reserved.'
+                    id={t('settings.about.copyright2')}
+                    style={[styles.footerText, styles.copyrightText]}
+                    testID='about.copyright2'
+                    values={{currentYear: new Date().getFullYear()}}
+                />
+                <FormattedText
                     defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved.'
                     id={t('settings.about.copyright')}
                     style={[styles.footerText, styles.copyrightText]}
@@ -321,13 +328,6 @@ const About = ({componentId, config, license}: AboutProps) => {
                         onPressTOS={handleTermsOfService}
                     />
                 </View>
-                <FormattedText
-                    defaultMessage='Copyright 2020-{currentYear} grommunio, Inc. All rights reserved.'
-                    id={t('settings.about.copyright2')}
-                    style={[styles.footerText, styles.copyrightText]}
-                    testID='about.copyright2'
-                    values={{currentYear: new Date().getFullYear()}}
-                />
                 <View style={styles.noticeContainer}>
                     <FormattedText
                         id={t('settings.notice_text')}

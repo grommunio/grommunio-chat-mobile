@@ -97,7 +97,7 @@ or
 - commit important changes and then reset all changes made by the build process (`git add -A; git stash`)
 - try building again
 
+#### validateSigningRelease
+> Task :app:validateSigningRelease FAILED
 
-
-
-
+- check the `gradle.properties` store-file-path, release-key-alias and release-password

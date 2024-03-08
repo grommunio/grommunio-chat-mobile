@@ -6,11 +6,11 @@
 
 ## Build the app
 
-- get the keystore -> current keystore in `/Users/stefanakie/Desktop/grommunio-chat/Android/config-files/grommunio-keystore.keystore`
-- get the keystore pwd -> see `/Users/stefanakie/Desktop/grommunio-chat/Android/config-files/gradle.properties`
+- get the keystore -> current keystore in `/Users/jensherman/Desktop/grommunio-chat/Android/config-files/grommunio-keystore.keystore`
+- get the keystore pwd -> see `/Users/jensherman/Desktop/grommunio-chat/Android/config-files/gradle.properties`
 - adjust `./android/gradle.properties` in project:
     ```
-    MATTERMOST_RELEASE_STORE_FILE=/Users/stefanakie/Desktop/grommunio-chat/Android/config-files/grommunio-keystore.keystore
+    MATTERMOST_RELEASE_STORE_FILE=/Users/jensherman/Desktop/grommunio-chat/Android/config-files/grommunio-keystore.keystore
     MATTERMOST_RELEASE_KEY_ALIAS=grommunio-keystore
     MATTERMOST_RELEASE_PASSWORD=<secret>
     ```

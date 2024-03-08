@@ -1,6 +1,6 @@
 {
   "name": "grommunio-chat",
-  "version": "2.12.3",
+  "version": "2.12.4",
   "description": "grommunio-chat powered by Mattermost",
   "repository": "git@github.com:mattermost/mattermost-mobile.git",
   "author": "grommunio GmbH.",

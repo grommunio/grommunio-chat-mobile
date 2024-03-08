@@ -111,8 +111,8 @@ android {
         applicationId "com.grommunio.chat"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 507
-        versionName "2.12.3"
+        versionCode 508
+        versionName "2.12.4"
         testBuildType System.getProperty('testBuildType', 'debug')
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }

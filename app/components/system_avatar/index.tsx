@@ -2,21 +2,21 @@
 // See LICENSE.txt for license information.
 
 import React from 'react';
+import {StyleSheet} from 'react-native';
 
-import CompassIcon from '@components/compass_icon';
-import {View as ViewConstants} from '@constants';
+import GrommunioIcon from '@app/components/grommunio_icon';
 
-type Props = {
-    theme: Theme;
-}
+const styles = StyleSheet.create({
+    logo: {
+        width: 40,
+        height: 40,
+        marginLeft: -8,
+    },
+});
 
-const SystemAvatar = ({theme}: Props) => {
+const SystemAvatar = () => {
     return (
-        <CompassIcon
-            name='mattermost'
-            color={theme.centerChannelColor}
-            size={ViewConstants.PROFILE_PICTURE_SIZE}
-        />
+        <GrommunioIcon style={styles.logo}/>
     );
 };
 

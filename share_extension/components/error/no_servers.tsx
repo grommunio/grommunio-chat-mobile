@@ -43,7 +43,7 @@ const NoServers = ({theme}: Props) => {
             />
             <FormattedText
                 id='extension.no_servers.description'
-                defaultMessage="To share content, you'll need to be logged in to a Mattermost server."
+                defaultMessage="To share content, you'll need to be logged in to a grommunio chat server."
                 style={styles.description}
             />
         </View>

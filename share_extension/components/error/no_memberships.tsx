@@ -43,7 +43,7 @@ const NoMemberships = ({theme}: Props) => {
             />
             <FormattedText
                 id='extension.no_memberships.description'
-                defaultMessage="To share content, you'll need to be a member of a team on a Mattermost server."
+                defaultMessage="To share content, you'll need to be a member of a team on a grommunio chat server."
                 style={styles.description}
             />
         </View>

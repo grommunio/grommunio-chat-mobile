@@ -325,7 +325,7 @@ const About = ({componentId, config, license}: AboutProps) => {
                 />
                 {!MATTERMOST_BUNDLE_IDS.includes(applicationId || '') &&
                     <FormattedText
-                        defaultMessage='{site} is powered by Mattermost'
+                        defaultMessage='{site} is powered by grommunio chat'
                         id={t('settings.about.powered_by')}
                         style={styles.footerText}
                         testID='about.powered_by'
@@ -352,7 +352,7 @@ const About = ({componentId, config, license}: AboutProps) => {
                 <View style={styles.noticeContainer}>
                     <FormattedText
                         id={t('settings.notice_text')}
-                        defaultMessage='Mattermost is made possible by the open source software used in our {platform} and {mobile}.'
+                        defaultMessage='grommunio chat is made possible by the open source software used in our {platform} and {mobile}.'
                         style={styles.footerText}
                         values={{
                             platform: (

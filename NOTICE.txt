@@ -1,4 +1,6 @@
-Mattermost Mobile
+grommunio chat mobile
+
+©2020-present grommunio GmbH. All Rights Reserved.
 
 © 2016-present Mattermost, Inc.  All Rights Reserved.  See LICENSE.txt for license information.
 

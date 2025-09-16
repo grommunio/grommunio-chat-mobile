@@ -3,20 +3,16 @@
 
 import React from 'react';
 
-import CompassIcon from '@components/compass_icon';
-import {View as ViewConstants} from '@constants';
+import GrommunioIcon from '@components/grommunio_icon';
 
 type Props = {
     theme: Theme;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const SystemAvatar = ({theme}: Props) => {
     return (
-        <CompassIcon
-            name='mattermost'
-            color={theme.centerChannelColor}
-            size={ViewConstants.PROFILE_PICTURE_SIZE}
-        />
+        <GrommunioIcon/>
     );
 };
 

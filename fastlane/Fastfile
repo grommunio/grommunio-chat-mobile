@@ -426,7 +426,7 @@ platform :ios do
 
   lane :update_identifiers do
     # Set the name for the app and share extension
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio Chat'
     update_info_plist(
         xcodeproj: './ios/Mattermost.xcodeproj',
         plist_path: 'Mattermost/Info.plist',
@@ -573,7 +573,7 @@ platform :ios do
       sh 'cp -R ../dist/assets/release/splash_screen/ios/SplashIcon.imageset ../ios/Mattermost/Images.xcassets/'
     end
 
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio Chat'
     localization_base_path = '../dist/assets/i18n/'
     Dir.glob('*.json', base: localization_base_path) do |item|
       localization_file = File.read(localization_base_path + item)
@@ -655,7 +655,7 @@ platform :ios do
   end
 
   def build_ios
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio Chat'
     app_name_sub = app_name.gsub(" ", "_")
     config_mode = ENV['BUILD_FOR_RELEASE'] == 'true' ? 'Release' : 'Debug'
     method = ENV['IOS_BUILD_EXPORT_METHOD'].nil? || ENV['IOS_BUILD_EXPORT_METHOD'].empty? ? 'ad-hoc' : ENV['IOS_BUILD_EXPORT_METHOD']
@@ -740,7 +740,7 @@ platform :android do
 
   lane :update_identifiers do
     # Set the name for the app
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio Chat'
     sh "echo '#{app_name}' > ../fastlane/metadata/android/en-US/title.txt"
     android_change_string_app_name(
         newName: app_name,
@@ -888,7 +888,7 @@ platform :android do
   end
 
   def move_android_to_root
-    app_name =  ENV['APP_NAME'] || 'Mattermost Beta'
+    app_name =  ENV['APP_NAME'] || 'grommunio Chat'
     app_name_sub = app_name.gsub(" ", "_")
     build_task = ENV['ANDROID_BUILD_TASK'].nil? || ENV['ANDROID_BUILD_TASK'].empty? ? 'assemble' : ENV['ANDROID_BUILD_TASK']
     build_task = build_task.split(",")

@@ -2,7 +2,7 @@
 // See LICENSE.txt for license information.
 
 import Clipboard from '@react-native-clipboard/clipboard';
-import {applicationId, nativeApplicationVersion, nativeBuildVersion} from 'expo-application';
+import {nativeApplicationVersion, nativeBuildVersion} from 'expo-application';
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {useIntl} from 'react-intl';
 import {Text, View} from 'react-native';
@@ -10,8 +10,8 @@ import {Text, View} from 'react-native';
 import {getLicenseLoadMetric} from '@actions/remote/license';
 import Config from '@assets/config.json';
 import Button from '@components/button';
-import CompassIcon from '@components/compass_icon';
 import FormattedText from '@components/formatted_text';
+import GrommunioIcon from '@components/grommunio_icon';
 import SettingContainer from '@components/settings/container';
 import AboutLinks from '@constants/about_links';
 import {SNACK_BAR_TYPE} from '@constants/snack_bar';
@@ -33,8 +33,6 @@ import Title from './title';
 import TosPrivacyContainer from './tos_privacy';
 
 import type {AvailableScreens} from '@typings/screens/navigation';
-
-const MATTERMOST_BUNDLE_IDS = ['com.mattermost.rnbeta', 'com.mattermost.rn'];
 
 const getStyleSheet = makeStyleSheetFromTheme((theme) => {
     return {
@@ -207,11 +205,8 @@ const About = ({componentId, config, license}: AboutProps) => {
     return (
         <SettingContainer testID='about'>
             <View style={styles.logoContainer}>
-                <CompassIcon
-                    color={theme.centerChannelColor}
-                    name='mattermost'
-                    size={88}
-                    testID='about.logo'
+                <GrommunioIcon
+                    size={77}
                 />
                 <Title
                     config={config}
@@ -308,32 +303,19 @@ const About = ({componentId, config, license}: AboutProps) => {
                         size='m'
                     />
                 </View>
-                {license?.IsLicensed === 'true' && (
-                    <View style={styles.licenseContainer}>
-                        <FormattedText
-                            defaultMessage='Licensed to: {company}'
-                            id={t('settings.about.licensed')}
-                            style={styles.info}
-                            testID='about.licensee'
-                            values={{company: license.Company}}
-                        />
-                    </View>
-                )}
                 <LearnMore
                     config={config}
                     onPress={handleAboutTeam}
                 />
-                {!MATTERMOST_BUNDLE_IDS.includes(applicationId || '') &&
-                    <FormattedText
-                        defaultMessage='{site} is powered by grommunio chat'
-                        id={t('settings.about.powered_by')}
-                        style={styles.footerText}
-                        testID='about.powered_by'
-                        values={{site: config.SiteName}}
-                    />
-                }
                 <View
                     style={styles.thinLine}
+                />
+                <FormattedText
+                    defaultMessage='Copyright 2020-{currentYear} grommunio GmbH. All rights reserved'
+                    id={t('settings.about.copyright_grommunio')}
+                    style={[styles.footerText, styles.copyrightText]}
+                    testID='about.copyright_grommunio'
+                    values={{currentYear: new Date().getFullYear()}}
                 />
                 <FormattedText
                     defaultMessage='Copyright 2015-{currentYear} Mattermost, Inc. All rights reserved'

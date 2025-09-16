@@ -34,18 +34,14 @@ type LearnMoreProps = {
     onPress: () => void;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const LearnMore = ({config, onPress}: LearnMoreProps) => {
     const theme = useTheme();
     const style = getStyleSheet(theme);
 
-    let id = t('about.teamEditionLearn');
-    let defaultMessage = 'Join the Mattermost community at ';
+    const id = t('about.teamEditionLearn');
+    const defaultMessage = 'Join the grommunio Chat community at ';
     const url = Config.WebsiteURL;
-
-    if (config.BuildEnterpriseReady === 'true') {
-        id = t('about.enterpriseEditionLearn');
-        defaultMessage = 'Learn more about Enterprise Edition at ';
-    }
 
     return (
         <View style={style.learnContainer}>
